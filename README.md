@@ -9,7 +9,7 @@ Powered by hexo
 # 安装 nodejs git 设置好 sshkey
 npm config set registry https://registry.npm.taobao.org
 npm install -g hexo-cli  
-git clone git@gitlab.com:gordonwalkedby/hexoblog.git
-cd blog3
+git clone git@github.com:gordonwalkedby/WalkedbyCOM.git
+cd WalkedbyCOM
 npm install
 ```
