@@ -4,6 +4,6 @@ hexo g
 git add -A
 [string]$d = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
 git commit -m $d
-git push
+git push origin master
 Write-Host "`n================ PUSH WORK over ================"
 
