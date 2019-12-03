@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>戈登走過去的博客</title>
+  
+  <subtitle>Gordon Walkedby&#39;s Blog</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://walkedby.com/"/>
+  <updated>2019-11-29T01:41:50.000Z</updated>
+  <id>https://walkedby.com/</id>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>用来测试网络的网址收藏</title>
+    <link href="https://walkedby.com/webtest/"/>
+    <id>https://walkedby.com/webtest/</id>
+    <published>2019-10-07T01:14:46.000Z</published>
+    <updated>2019-10-07T01:14:46.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;测网速的网站：&quot;&gt;&lt;a href=&quot;#测网速的网站：&quot; class=&quot;headerlink&quot; title=&quot;测网速的网站：&quot;&gt;&lt;/a&gt;测网速的网站：&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.speedtest.net/&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>手机任务管理器</title>
+    <link href="https://walkedby.com/remotetaskmanager/"/>
+    <id>https://walkedby.com/remotetaskmanager/</id>
+    <published>2019-10-01T05:08:00.000Z</published>
+    <updated>2019-10-01T05:08:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;设计意图：&quot;&gt;&lt;a href=&quot;#设计意图：&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>在 Windows 上给 Git SSH 设置代理</title>
+    <link href="https://walkedby.com/sshwindowsproxy/"/>
+    <id>https://walkedby.com/sshwindowsproxy/</id>
+    <published>2019-08-31T23:44:20.000Z</published>
+    <updated>2019-08-31T23:44:20.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;百度搜到的很多给 git 设置代理的办法，都是给 http 设置代理，而不是给 SSH 设置代理。那个 &lt;code&gt;git config --global http.proxy http://127.0.0.1:1080&lt;/code&gt; 设置起来，只针对 http 的
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>使用第三代ID 的 STEAM 个人主页链接</title>
+    <link href="https://walkedby.com/steamid3/"/>
+    <id>https://walkedby.com/steamid3/</id>
+    <published>2019-08-22T02:58:26.000Z</published>
+    <updated>2019-08-22T02:58:26.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;现在 Steam 推出了用一个数字 ID 来加好友的功能，这个 ID 其实一直都在，&lt;br&gt;我们的 &lt;a href=&quot;https://steamrepcn.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;SteamRepCN&lt;/a&gt;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Steam 好友检查器</title>
+    <link href="https://walkedby.com/steamfriendschecker/"/>
+    <id>https://walkedby.com/steamfriendschecker/</id>
+    <published>2019-08-17T12:45:02.000Z</published>
+    <updated>2019-08-17T12:45:02.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;这是我自己编写的第一个猴子脚本，希望大家喜欢，虽然我这个设计，不敢保证有人会喜欢这样的东西。&lt;/p&gt;
+&lt;p&gt;Greasy Fork 链接： &lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Linux 主机与 KVM 虚拟机内 Windows 进行 FTP 文件传输的配置说明</title>
+    <link href="https://walkedby.com/kvmwindows/"/>
+    <id>https://walkedby.com/kvmwindows/</id>
+    <published>2019-08-14T01:29:24.000Z</published>
+    <updated>2019-08-14T01:29:24.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;我在 KVM 虚拟机里安装了 Windows 10 ，然后发现客户机与宿主机之间的文件传输还是很麻烦。&lt;br&gt;动不动就塞一张 ISO 给虚拟 DVD 驱动器，太麻烦了。&lt;br&gt;在网上翻来翻去也没研究透 SMB Mount 什么的用法。&lt;br&gt;最后自己研究出了 FTP
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>B站六级计算器</title>
+    <link href="https://walkedby.com/whenlv6/"/>
+    <id>https://walkedby.com/whenlv6/</id>
+    <published>2019-08-11T01:27:58.000Z</published>
+    <updated>2019-08-11T01:27:58.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;在下面输入你的B站信息，然后我就可以计算出你还有多久才可以升级到 LV6 。&lt;/p&gt;
+&lt;script src=&quot;/scripts/whenlv6.js&quot;&gt;&lt;/script&gt;
+
+&lt;form id=&quot;calc&quot; style=&quot;border: medium ridge
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Steam正版GTA4存档导入的正确姿势</title>
+    <link href="https://walkedby.com/gtaivsavedgames/"/>
+    <id>https://walkedby.com/gtaivsavedgames/</id>
+    <published>2019-08-05T13:14:17.000Z</published>
+    <updated>2019-08-05T13:14:17.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;在 Steam 重新下载了 Grand Theft Auto IV 来玩，然后试着导入我之前自己备份的存档，结果试了好几次发现都失败了，现在知道正确办法是什么了。&lt;br&gt;说实话，照理说我的存档应该是 Windows Live
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Steam 各国家区域的价格、锁区情况梗概</title>
+    <link href="https://walkedby.com/steam-countries/"/>
+    <id>https://walkedby.com/steam-countries/</id>
+    <published>2019-08-04T06:15:11.000Z</published>
+    <updated>2019-08-04T06:15:11.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;我写了个爬虫来调查 Steam 各个区游戏的锁区、价格高低的情况，得出了以下数据，给大家看一下。&lt;br&gt;注意，以下数据具有时效性，局限性，随机性，仅供参考，不保证准确或有很大意义。&lt;/p&gt;
+&lt;h1 id=&quot;结果数据&quot;&gt;&lt;a href=&quot;#结果数据&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>GMod使用半条命2中文配音的办法</title>
+    <link href="https://walkedby.com/gmodchinesevoice/"/>
+    <id>https://walkedby.com/gmodchinesevoice/</id>
+    <published>2019-03-01T16:00:00.000Z</published>
+    <updated>2019-03-01T16:00:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;这篇文章讲述，怎么给 Steam 版 GMod 里的NPC使用中文的半条命2配音。&lt;br&gt;需要的是 Steam 版的半条命2，首先记得把半条命2的语言开到中文。  &lt;/p&gt;
+&lt;p&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>半条命风格WinForm控件库</title>
+    <link href="https://walkedby.com/halflifecontrols/"/>
+    <id>https://walkedby.com/halflifecontrols/</id>
+    <published>2019-02-12T16:00:00.000Z</published>
+    <updated>2019-02-12T16:00:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Half Life Style Controls&lt;/p&gt;
+&lt;p&gt;一套自制的半条命（老Steam）风格的 Windows Forms 控件库，需要 .NET Framework 4.5 或以上，支持 C# 和
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>使用 CPU-Z 来分享你的电脑配置信息</title>
+    <link href="https://walkedby.com/usecpuz/"/>
+    <id>https://walkedby.com/usecpuz/</id>
+    <published>2019-02-02T16:00:00.000Z</published>
+    <updated>2019-02-02T16:00:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;CPU-Z 是一个电脑配置信息的检测软件，关键是还支持上传到他们的云端服务器，这么好用的东西为什么不用呢。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://s2.ax1x.com/2019/02/03/kGDzan.png&quot; alt&gt;&lt;/p&gt;
+&lt;p&gt;下面我来教你怎么用
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>早期软件集合</title>
+    <link href="https://walkedby.com/oldsoftwares/"/>
+    <id>https://walkedby.com/oldsoftwares/</id>
+    <published>2019-02-01T16:00:00.000Z</published>
+    <updated>2019-02-01T16:00:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;下面列出的软件都是我的早期作品，已经不再更新或管理，需要的自己下载，有问题就请保留 ;w; &lt;/p&gt;
+&lt;h1 id=&quot;CSGOUIx&quot;&gt;&lt;a href=&quot;#CSGOUIx&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>我的起源开发笔记</title>
+    <link href="https://walkedby.com/SourceDevNotes/"/>
+    <id>https://walkedby.com/SourceDevNotes/</id>
+    <published>2018-11-26T11:14:51.000Z</published>
+    <updated>2018-11-26T11:14:51.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;其实是方便我自己复制粘贴用的（（（&lt;br&gt;各位如果有需要就请自便吧 &lt;/p&gt;
+&lt;p&gt;VMT 语句：&lt;/p&gt;
+&lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>.NET HttpListener 监听局域网其他设备HTTP请求的说明</title>
+    <link href="https://walkedby.com/HTTPLISTNERoverLAN/"/>
+    <id>https://walkedby.com/HTTPLISTNERoverLAN/</id>
+    <published>2018-11-10T08:30:29.000Z</published>
+    <updated>2018-11-10T08:30:29.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;我一直在想怎么在局域网内其他设备（手机、电脑）给自己的电脑传输HTTP请求，并且要用 .NET 的 &lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Steam 社区的神奇保护机制</title>
+    <link href="https://walkedby.com/steamcommunitys/"/>
+    <id>https://walkedby.com/steamcommunitys/</id>
+    <published>2018-08-29T23:38:54.000Z</published>
+    <updated>2018-08-29T23:38:54.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;前几天我给我的steam账户换了一个邮箱：&lt;br&gt;&lt;img src=&quot;https://s1.ax1x.com/2018/08/30/PXRClD.png&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>点COM！</title>
+    <link href="https://walkedby.com/new-domain/"/>
+    <id>https://walkedby.com/new-domain/</id>
+    <published>2018-05-27T07:46:46.000Z</published>
+    <updated>2018-05-27T07:46:46.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;听了一些朋友（德高望重的那种）的话，现在觉得 .top 域名就是一个便宜，其他也不行了。&lt;br&gt;&lt;img src=&quot;https://s1.ax1x.com/2018/05/27/Chs7As.png&quot; alt&gt;&lt;br&gt;最后还是决定，换一个 .com 的新域名。而且
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Telegram 贴纸包批量下载解决方案</title>
+    <link href="https://walkedby.com/tgsticks/"/>
+    <id>https://walkedby.com/tgsticks/</id>
+    <published>2018-03-11T13:53:57.000Z</published>
+    <updated>2018-03-11T13:53:57.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;现在我知道的三个机器人：  &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://t.me/GIFDownloader_bot&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>GMod 传奇：《Haven》的诞生</title>
+    <link href="https://walkedby.com/GMod-Stories-The-Making-of-Haven/"/>
+    <id>https://walkedby.com/GMod-Stories-The-Making-of-Haven/</id>
+    <published>2018-02-03T11:34:06.000Z</published>
+    <updated>2018-02-03T11:34:06.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;翻译：戈登走過去&lt;br&gt;译者注：&lt;br&gt;本文的原文是刊登在 GMod 官方博客里的文章《&lt;a href=&quot;https://gmod.facepunch.com/blog/gmod-stories--the-making-of-haven/&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>在 VB.NET 里进行文件拖入和拖出的方法</title>
+    <link href="https://walkedby.com/how-to-drag-in-vb/"/>
+    <id>https://walkedby.com/how-to-drag-in-vb/</id>
+    <published>2018-01-05T16:00:00.000Z</published>
+    <updated>2018-01-05T16:00:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;写此文的实际目的：我自己会忘记，给我自己用的。（误）&lt;br&gt;不得不说， Drag
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>

@@ -1,0 +1,67 @@
+# Header
+menu:
+  主页: /
+  捐助: /donateme
+  归档: /archives
+  关于: /about
+  RSS: /atom.xml
+  微博: https://weibo.com/gordon2001
+  B站: https://space.bilibili.com/4523834
+  YouTube: https://www.youtube.com/channel/UCpnf5wTnI9br8IxJbRV5Tew
+  Steam: https://steamcommunity.com/profiles/76561198099466387/
+  GitHub: https://github.com/gordonwalkedby
+  GitLab: https://gitlab.com/gordonwalkedby
+
+
+# 友情链接
+friends:
+  AceSheep: https://blog.acesheep.com/
+  Bottle 小站: https://bottle.moe/
+  Sonic 853: https://blog.853lab.com/
+  智弦正: https://ycwei982.com/
+  Loyisa: https://loyisa.cn/
+
+
+rss: /atom.xml
+banner: "images/banner.jpg"
+
+# Content
+excerpt_link: Read More
+fancybox: false
+
+# Sidebar
+sidebar: right
+widgets:
+- archive
+- recent_posts
+
+# display widgets at the bottom of index pages (pagination == 2)
+index_widgets:
+# - category
+# - tagcloud
+# - archive
+
+# widget behavior
+archive_type: 'yearly'
+show_count: true
+
+# Miscellaneous
+google_analytics:
+gauges_analytics:
+favicon: /favicon.ico
+twitter:
+fb_admins:
+fb_app_id:
+
+# valine comment system. https://valine.js.org
+valine:
+  enable: false # if you want use valine,please set this value is true
+  appId:  # leancloud application app id
+  appKey:  # leancloud application app key
+  notify: false # valine mail notify (true/false) https://github.com/xCss/Valine/wiki
+  verify: false # valine verify code (true/false)
+  pageSize: 10 # comment list page size
+  avatar: mm # gravatar style https://valine.js.org/#/avatar
+  lang: zh-cn # i18n: zh-cn/en
+  placeholder: Just go go # valine comment input placeholder(like: Please leave your footprints )
+  guest_info: nick,mail,link #valine comment header info
