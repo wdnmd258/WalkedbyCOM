@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://walkedby.com/webtest/</loc>
+    <lastmod>2019-10-07</lastmod>
+  </url>
+  
+  <url>
     <loc>https://walkedby.com/oldsoftwares/</loc>
     <lastmod>2019-02-01</lastmod>
   </url>
@@ -12,13 +17,8 @@
   </url>
   
   <url>
-    <loc>https://walkedby.com/gmodchinesevoice/</loc>
-    <lastmod>2019-03-01</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://walkedby.com/mlg/</loc>
-    <lastmod>2017-05-20</lastmod>
+    <loc>https://walkedby.com/gtaivsavedgames/</loc>
+    <lastmod>2019-08-05</lastmod>
   </url>
   
   <url>
@@ -77,8 +77,8 @@
   </url>
   
   <url>
-    <loc>https://walkedby.com/gtaivsavedgames/</loc>
-    <lastmod>2019-08-05</lastmod>
+    <loc>https://walkedby.com/gmodchinesevoice/</loc>
+    <lastmod>2019-03-01</lastmod>
   </url>
   
   <url>
@@ -92,13 +92,8 @@
   </url>
   
   <url>
-    <loc>https://walkedby.com/antiteacher/</loc>
-    <lastmod>2017-08-10</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://walkedby.com/remotetaskmanager/</loc>
-    <lastmod>2019-10-01</lastmod>
+    <loc>https://walkedby.com/mlg/</loc>
+    <lastmod>2017-05-20</lastmod>
   </url>
   
   <url>
@@ -109,6 +104,11 @@
   <url>
     <loc>https://walkedby.com/steam-countries/</loc>
     <lastmod>2019-08-04</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://walkedby.com/remotetaskmanager/</loc>
+    <lastmod>2019-10-01</lastmod>
   </url>
   
   <url>
@@ -127,8 +127,8 @@
   </url>
   
   <url>
-    <loc>https://walkedby.com/webtest/</loc>
-    <lastmod>2019-10-07</lastmod>
+    <loc>https://walkedby.com/antiteacher/</loc>
+    <lastmod>2017-08-10</lastmod>
   </url>
   
   <url>
