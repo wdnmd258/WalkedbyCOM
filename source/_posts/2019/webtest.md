@@ -11,6 +11,7 @@ tags:
 - \* https://wangsuceshi.51240.com/
 
 # 查看我的公网 IP
+- https://duckduckgo.com/?q=ip&t=h_&ia=answer
 - https://www.test-ipv6.com/
 - \* https://mijisou.com/?q=ip
 - \* https://www.ipip.net/ip.html
