@@ -8,7 +8,10 @@ tags:
 
 你的浏览器UA是：  
 
-<script>document.write(navigator.userAgent);</script>
+<script>document.write(navigator.userAgent);</script>  
+
+<br><br>
+你的浏览器 <script>var s="支持";if(typeof(RTCPeerConnection)=="undefined"){s="不"+s;}document.write(s);</script> WebRTC。
 
 我是**粗体abc**，我是*斜体xyz*，对吗？
 
