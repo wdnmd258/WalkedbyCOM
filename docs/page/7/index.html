@@ -78,10 +78,10 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-whenlv6" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-kvmwindows" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="../../whenlv6/" class="article-date">
-  <time datetime="2019-08-11T01:27:58.000Z" itemprop="datePublished">2019-08-11</time>
+    <a href="../../kvmwindows/" class="article-date">
+  <time datetime="2019-08-14T01:29:24.000Z" itemprop="datePublished">2019-08-14</time>
 </a>
     
   </div>
@@ -92,7 +92,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="../../whenlv6/">B站六级计算器</a>
+      <a class="article-title" href="../../kvmwindows/">Linux 主机与 KVM 虚拟机内 Windows 进行 FTP 文件传输的配置说明</a>
     </h1>
   
 
@@ -100,42 +100,23 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>在下面输入你的B站信息，然后我就可以计算出你还有多久才可以升级到 LV6 。</p>
-<script src="/scripts/whenlv6.js"></script>
-
-<form id="calc" style="border: medium ridge black; max-width: 500px; padding: 10px;">
-    <h2>请在下面填写你帐号目前的情况：</h2>
-    经验值：<input id="ex" type="number" value="1000"><br>
-    拥有的硬币数量：<input id="coins" type="number" value="10"><br>
-    <input id="doCoins" type="checkbox" value="y" checked="checked"> 会每天给别人的视频投币5个（不足5个就投光你有的为止）<br>
-    <input id="doShare" type="checkbox" value="y" checked="checked"> 会每天用手机APP分享视频<br>
-    你投稿一个视频大概收到几个硬币：<input id="videocoins" type="number" value="0"><br>
-    你一个月大概投稿几个视频：<input id="videos" type="number" value="0"><br>
-    你一个月大概花多少B币给别的UP主充电（或给某番剧承包花钱）：<input id="sends" type="number" value="0"><br>
-    <input id="doLive" type="checkbox" value="y" checked="checked"> 会每天去B站直播那签到，并领取全部9个直播宝箱的900个银瓜子并换700个变成一个硬币<br>
-    你一个月其实有几天能记得来B站做事刷经验：<input id="days" type="number" value="10"><br>
-    <button type="button" onclick="CalcWhenLV6();">点我计算</button>
-    <h2>结果：</h2>
-    <b><p id="out"></p></b>
-</form>
-
-<p><a href="https://gitlab.com/gordonwalkedby/hexoblog/blob/master/source/Tscripts/whenlv6.ts" target="_blank" rel="noopener">本计算器的源码</a><br><a href="https://www.bilibili.com/video/av63407383" target="_blank" rel="noopener">B站讲解视频</a><br><a href="./donateme/">喜欢的话，赏点钱给我好不好</a>  </p>
-<h1 id="当前计算准则："><a href="#当前计算准则：" class="headerlink" title="当前计算准则："></a>当前计算准则：</h1><ul>
-<li>为计算方便，“你一个月其实有几天能记得来B站做事刷经验”的这几天都视作每月的前几天</li>
-<li><a href="https://www.bilibili.com/blackboard/help.html#%E4%BC%9A%E5%91%98%E7%AD%89%E7%BA%A7%E7%9B%B8%E5%85%B3?id=7251c4ab69d44a8ebbbd276dea46d790" target="_blank" rel="noopener">B站六个等级</a>的经验值：0, 200, 1500, 4500, 10800, 28800</li>
-<li>这里只计算B站绑定了手机号的用户的等级，即经验最低为100</li>
-<li>每天登录：硬币+1,经验+5</li>
-<li>每天观看视频：经验+5</li>
-<li>给别人的视频投币一个：经验+10，每天最多+50</li>
-<li>自己的视频获得一个投币：经验+1，在每月的一日结算</li>
-<li>给别人充电花费一B币（一元钱）或承包番剧花费一B币（一元钱）：经验+1，因为此处不便估计所以也在每月的一日结算，B站实际为立刻结算，所以其实冲钱就能马上升级</li>
-<li>根据<a href="https://www.bilibili.com/video/av19231729" target="_blank" rel="noopener">av19231729</a>所说，投稿视频也可以硬币+1，经验+1，视频被收藏数每增加200硬币也+1，此处没有查到相关记录，不做计算</li>
-<li>风纪委员的奖励不做计算</li>
-<li>在B站直播每天可以开直播在线宝箱，最多一天开出内 (30+80+190)*3=900 个银瓜子</li>
-<li>在B站直播每月可以连续签到5天换666银瓜子，此处不做计算</li>
-<li>在B站直播购买月费会员或年费会员会立即附赠2-10万的银瓜子，此处不做计算</li>
-<li>在B站直播可以<a href="https://live.bilibili.com/exchange" target="_blank" rel="noopener">每天兑换700个银瓜子为一个硬币</a></li>
-</ul>
+        <p>我在 KVM 虚拟机里安装了 Windows 10 ，然后发现客户机与宿主机之间的文件传输还是很麻烦。<br>动不动就塞一张 ISO 给虚拟 DVD 驱动器，太麻烦了。<br>在网上翻来翻去也没研究透 SMB Mount 什么的用法。<br>最后自己研究出了 FTP 的办法，接下来我把过程写在这里。  </p>
+<ol>
+<li><p>首先检查自己的 Linux 系统的代理，因为我被我自己的代理给坑死了，Privoxy 是不支持 FTP 代理的，而我居然还写了进去。<br> 检查一下自己的 <code>export | grep ftp_proxy</code> ，最好为空，我不觉得现在还有人需要在 FTP 上挂代理了。<br> 还有检查一下桌面的代理设置：<br> <img src="https://s2.ax1x.com/2019/08/14/mPLlUU.png" alt>  </p>
+</li>
+<li><p>设置好虚拟机的网络，类型要 NAT ，不要桥接。<br> <img src="https://s2.ax1x.com/2019/08/14/mPzhaq.png" alt><br> 然后把虚拟机的 IP 给锁上，免得自己跑偏了。<br> <img src="https://s2.ax1x.com/2019/08/14/mPzG8O.png" alt>  </p>
+</li>
+<li><p>接下来在 Windows 里用 IIS 开启一个粗暴的 FTP 服务器。<br> <img src="https://s2.ax1x.com/2019/08/14/mPOnRH.png" alt><br> 首先要启用 IIS 和 FTP ，安装好之后，在开始菜单里找到并打开 IIS 。<br> <img src="https://s2.ax1x.com/2019/08/14/mPOIw6.png" alt><br> 接下来按图里操作，如果你懂的话，可以自己改改。<br> <img src="https://s2.ax1x.com/2019/08/14/mPXEXn.png" alt><br> 名字随便起，然后给它一个文件夹。<br> <img src="https://s2.ax1x.com/2019/08/14/mPXY0x.png" alt><br> IP 不绑定，端口默认，然后 SSL 选没有。<br> <img src="https://s2.ax1x.com/2019/08/14/mPXynI.png" alt><br> 全员支持，全员读写。<br> <img src="https://s2.ax1x.com/2019/08/14/mPXLNT.png" alt><br> FTP 服务器的创建到这里就完成了，但是其实还是有权限问题，默认还是只能读取不能写入的。<br> 接下来跑到 Windows 文件管理器里打开这个文件夹的属性。<br> 按照下面从左到右的顺序进行操作：<br> <img src="https://s2.ax1x.com/2019/08/14/mPvpRg.png" alt><br> 给 Everyone 来个全部控制允许就行了（粗暴）<br> <img src="https://s2.ax1x.com/2019/08/14/mPvGo6.png" alt><br> 然后一路 OK 保存，关闭属性窗口。<br> IIS 默认是开机自动启动在后台的，所以你不用自己手动让 FTP 服务器开机启动。 </p>
+</li>
+<li><p>在虚拟机里把防火墙对 FTP 的封锁进行解除，当然你要是图省事，直接关了防火墙就好了。<br> <a href="https://jingyan.baidu.com/article/c35dbcb099987c8916fcbcee.html" target="_blank" rel="noopener">https://jingyan.baidu.com/article/c35dbcb099987c8916fcbcee.html</a>   </p>
+</li>
+<li><p>给这个 FTP 文件夹先随便创建一个文件，免得等会看不出来有没有连接成功。<br> <img src="https://s2.ax1x.com/2019/08/14/mPvz01.png" alt></p>
+</li>
+<li><p>接下来可以先用浏览器简单试试了，记得把浏览器代理也给关了或者跳过 192.168 的IP。<br> <img src="https://s2.ax1x.com/2019/08/14/mip2En.png" alt><br> 成功了就好，不成功就真的拉倒了，我也不知道怎么办了。  </p>
+</li>
+<li><p>然后就可以在系统自带的文件管理器里添加 FTP 文件夹了，我这里使用的是 KDE 的 Dolphin 。<br> <img src="https://s2.ax1x.com/2019/08/14/miPk1f.png" alt><br> <img src="https://s2.ax1x.com/2019/08/14/miiLLD.png" alt><br> <img src="https://s2.ax1x.com/2019/08/14/miFPQf.png" alt><br> <img src="https://s2.ax1x.com/2019/08/14/miF5nS.png" alt><br> 能顺利连接和操作就好，不行就拉倒，我真的没什么办法了。  </p>
+</li>
+</ol>
 
       
     </div>
@@ -156,7 +137,7 @@
 
   <nav id="page-nav">
     
-    <a class="extend prev" rel="prev" href="../6/">&laquo; 上一页</a><a class="page-number" href="../../">1</a><span class="space">&hellip;</span><a class="page-number" href="../5/">5</a><a class="page-number" href="../6/">6</a><span class="page-number current">7</span><a class="page-number" href="../8/">8</a><a class="page-number" href="../9/">9</a><span class="space">&hellip;</span><a class="page-number" href="../28/">28</a><a class="extend next" rel="next" href="../8/">下一页 &raquo;</a>
+    <a class="extend prev" rel="prev" href="../6/">&laquo; 上一页</a><a class="page-number" href="../../">1</a><span class="space">&hellip;</span><a class="page-number" href="../5/">5</a><a class="page-number" href="../6/">6</a><span class="page-number current">7</span><a class="page-number" href="../8/">8</a><a class="page-number" href="../9/">9</a><span class="space">&hellip;</span><a class="page-number" href="../29/">29</a><a class="extend next" rel="next" href="../8/">下一页 &raquo;</a>
   </nav>
 
 </section>
@@ -167,7 +148,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2019/">2019</a><span class="archive-list-count">13</span></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2018/">2018</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2017/">2017</a><span class="archive-list-count">7</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2019/">2019</a><span class="archive-list-count">14</span></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2018/">2018</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2017/">2017</a><span class="archive-list-count">7</span></li></ul>
     </div>
   </div>
 
@@ -178,6 +159,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="../../dotnetframeworkingithubactions/">使用 GitHub Actions 编译 .NET Framework 程序</a>
+          </li>
         
           <li>
             <a href="../../webtest/">用来测试网络的网址收藏</a>
@@ -209,10 +194,6 @@
         
           <li>
             <a href="../../gtaivsavedgames/">Steam正版GTA4存档导入的正确姿势</a>
-          </li>
-        
-          <li>
-            <a href="../../steam-countries/">Steam 各国家区域的价格、锁区情况梗概</a>
           </li>
         
       </ul>

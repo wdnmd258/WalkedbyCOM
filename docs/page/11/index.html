@@ -78,10 +78,10 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-halflifecontrols" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-gmodchinesevoice" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="../../halflifecontrols/" class="article-date">
-  <time datetime="2019-02-12T16:00:00.000Z" itemprop="datePublished">2019-02-13</time>
+    <a href="../../gmodchinesevoice/" class="article-date">
+  <time datetime="2019-03-01T16:00:00.000Z" itemprop="datePublished">2019-03-02</time>
 </a>
     
   </div>
@@ -92,7 +92,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="../../halflifecontrols/">半条命风格WinForm控件库</a>
+      <a class="article-title" href="../../gmodchinesevoice/">GMod使用半条命2中文配音的办法</a>
     </h1>
   
 
@@ -100,14 +100,16 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Half Life Style Controls</p>
-<p>一套自制的半条命（老Steam）风格的 Windows Forms 控件库，需要 .NET Framework 4.5 或以上，支持 C# 和 VB。<br>已经不再更新，最后更新于2019年3月。</p>
-<p><a href="https://github.com/gordonwalkedby/HLControl/blob/master/WL/HLControl/README.md" target="_blank" rel="noopener">Github、使用说明、下载</a><br><a href="https://github.com/gordonwalkedby/HLControl/releases" target="_blank" rel="noopener">点我下载展示EXE和DLL</a>  </p>
-<p>展示截图：  </p>
-<p><img src="https://s2.ax1x.com/2019/02/13/k04F10.png" alt></p>
-<p><img src="https://s2.ax1x.com/2019/02/13/k04AXT.gif" alt></p>
-<p><img src="https://s2.ax1x.com/2019/02/13/k04VnU.png" alt></p>
-<p><img src="https://s2.ax1x.com/2019/02/13/k04nAJ.gif" alt></p>
+        <p>这篇文章讲述，怎么给 Steam 版 GMod 里的NPC使用中文的半条命2配音。<br>需要的是 Steam 版的半条命2，首先记得把半条命2的语言开到中文。  </p>
+<p><img src="https://s2.ax1x.com/2019/03/02/kbTyZj.png" alt></p>
+<p>接下来打开两个文件夹窗口，一个打开到 <code>C:\Program Files (x86)\Steam\steamapps\common\GarrysMod\bin</code><br>另外一个打开到 <code>C:\Program Files (x86)\Steam\steamapps\common\Half-Life 2\hl2</code><br><img src="https://s2.ax1x.com/2019/03/02/kb7vhq.png" alt><br>在 <code>GarrysMod\bin</code> 文件夹里找到 <code>vpk.exe</code><br>在 <code>Half-Life 2\hl2</code> 文件夹里找到 <code>hl2_sound_vo_schinese_dir.vpk</code> 文件  </p>
+<p>然后把 <code>hl2_sound_vo_schinese_dir.vpk</code> 拖到 <code>vpk.exe</code> 里打开<br><img src="https://s2.ax1x.com/2019/03/02/kb7FYt.png" alt><br>正常情况下应该会看见这个窗口<br><img src="https://s2.ax1x.com/2019/03/02/kb7kfP.png" alt><br>你会看见一堆的 wav 文件，那些就是中文配音文件了<br>等这个窗口自己消失，就可以得到全部需要的文件了。<br>以上操作会把 <code>hl2_sound_vo_schinese_dir.vpk</code> 里包含的中文配音文件解压到 <code>C:\Program Files (x86)\Steam\steamapps\common\Half-Life 2\hl2\hl2_sound_vo_schinese_dir</code> 文件夹里<br><img src="https://s2.ax1x.com/2019/03/02/kb7lYq.png" alt>  </p>
+<p>接下来删除 <code>sound</code> 以外的三个文件夹，因为我们只需要声音文件<br>然后移动整个 <code>hl2_sound_vo_schinese_dir</code> 文件夹到 <code>GarrysMod\garrysmod\addons</code> 文件夹里即可<br><img src="https://s2.ax1x.com/2019/03/02/kb7J6U.png" alt>  </p>
+<p>现在你就可以打开 GMod，然后体验中文配音的半条命2了<br>这个办法也适用于HLS和EP1<br>解包以下vpk并移动到 <code>garrysmod\addons</code> 文件夹里即可</p>
+<ul>
+<li><code>Half-Life 2\hl1\hl1_sound_vo_schinese_dir.vpk</code></li>
+<li><code>Half-Life 2\episodic\ep1_sound_vo_schinese_dir.vpk</code></li>
+</ul>
 
       
     </div>
@@ -128,7 +130,7 @@
 
   <nav id="page-nav">
     
-    <a class="extend prev" rel="prev" href="../10/">&laquo; 上一页</a><a class="page-number" href="../../">1</a><span class="space">&hellip;</span><a class="page-number" href="../9/">9</a><a class="page-number" href="../10/">10</a><span class="page-number current">11</span><a class="page-number" href="../12/">12</a><a class="page-number" href="../13/">13</a><span class="space">&hellip;</span><a class="page-number" href="../28/">28</a><a class="extend next" rel="next" href="../12/">下一页 &raquo;</a>
+    <a class="extend prev" rel="prev" href="../10/">&laquo; 上一页</a><a class="page-number" href="../../">1</a><span class="space">&hellip;</span><a class="page-number" href="../9/">9</a><a class="page-number" href="../10/">10</a><span class="page-number current">11</span><a class="page-number" href="../12/">12</a><a class="page-number" href="../13/">13</a><span class="space">&hellip;</span><a class="page-number" href="../29/">29</a><a class="extend next" rel="next" href="../12/">下一页 &raquo;</a>
   </nav>
 
 </section>
@@ -139,7 +141,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2019/">2019</a><span class="archive-list-count">13</span></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2018/">2018</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2017/">2017</a><span class="archive-list-count">7</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2019/">2019</a><span class="archive-list-count">14</span></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2018/">2018</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2017/">2017</a><span class="archive-list-count">7</span></li></ul>
     </div>
   </div>
 
@@ -150,6 +152,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="../../dotnetframeworkingithubactions/">使用 GitHub Actions 编译 .NET Framework 程序</a>
+          </li>
         
           <li>
             <a href="../../webtest/">用来测试网络的网址收藏</a>
@@ -181,10 +187,6 @@
         
           <li>
             <a href="../../gtaivsavedgames/">Steam正版GTA4存档导入的正确姿势</a>
-          </li>
-        
-          <li>
-            <a href="../../steam-countries/">Steam 各国家区域的价格、锁区情况梗概</a>
           </li>
         
       </ul>

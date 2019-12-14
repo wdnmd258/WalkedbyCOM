@@ -78,10 +78,10 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-gtaivsavedgames" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-whenlv6" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="../../gtaivsavedgames/" class="article-date">
-  <time datetime="2019-08-05T13:14:17.000Z" itemprop="datePublished">2019-08-05</time>
+    <a href="../../whenlv6/" class="article-date">
+  <time datetime="2019-08-11T01:27:58.000Z" itemprop="datePublished">2019-08-11</time>
 </a>
     
   </div>
@@ -92,7 +92,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="../../gtaivsavedgames/">Steam正版GTA4存档导入的正确姿势</a>
+      <a class="article-title" href="../../whenlv6/">B站六级计算器</a>
     </h1>
   
 
@@ -100,8 +100,42 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>在 Steam 重新下载了 Grand Theft Auto IV 来玩，然后试着导入我之前自己备份的存档，结果试了好几次发现都失败了，现在知道正确办法是什么了。<br>说实话，照理说我的存档应该是 Windows Live 云同步才是，其实没有同步，坑爹死了。建议大家，如果自己不玩了，最好都自己手动备份一下存档。  </p>
-<h1 id="载入自己的存档"><a href="#载入自己的存档" class="headerlink" title="载入自己的存档"></a>载入自己的存档</h1><p>首先，一定要进游戏，然后稍微玩一下，这样才会有一个初始的本地存档，不能游戏都没玩就直接导入存档。<br>在文件管理器打开 <strong><code>%userprofile%\AppData\Local\Rockstar Games\GTA IV\savegames</code></strong> 文件夹。<br>理想情况下会看见类似这样：<br><img src="https://s2.ax1x.com/2019/08/05/eRYRPA.png" alt><br><strong><code>user_eXXXXXXXXX</code></strong> 这个文件夹名字后面的那串字母和数字是你的本地用户ID，是游戏给你生成的。<br>接着把这个文件夹里的文件都删掉，把自己备份的存档文件丢进来。<br><img src="https://s2.ax1x.com/2019/08/05/eRtKde.png" alt><br>丢进来之后，进游戏，应该就不是 STARTING A NEW GAME 啦。<br><img src="https://s2.ax1x.com/2019/08/05/eRUEDK.png" alt>  </p>
+        <p>在下面输入你的B站信息，然后我就可以计算出你还有多久才可以升级到 LV6 。</p>
+<script src="/scripts/whenlv6.js"></script>
+
+<form id="calc" style="border: medium ridge black; max-width: 500px; padding: 10px;">
+    <h2>请在下面填写你帐号目前的情况：</h2>
+    经验值：<input id="ex" type="number" value="1000"><br>
+    拥有的硬币数量：<input id="coins" type="number" value="10"><br>
+    <input id="doCoins" type="checkbox" value="y" checked="checked"> 会每天给别人的视频投币5个（不足5个就投光你有的为止）<br>
+    <input id="doShare" type="checkbox" value="y" checked="checked"> 会每天用手机APP分享视频<br>
+    你投稿一个视频大概收到几个硬币：<input id="videocoins" type="number" value="0"><br>
+    你一个月大概投稿几个视频：<input id="videos" type="number" value="0"><br>
+    你一个月大概花多少B币给别的UP主充电（或给某番剧承包花钱）：<input id="sends" type="number" value="0"><br>
+    <input id="doLive" type="checkbox" value="y" checked="checked"> 会每天去B站直播那签到，并领取全部9个直播宝箱的900个银瓜子并换700个变成一个硬币<br>
+    你一个月其实有几天能记得来B站做事刷经验：<input id="days" type="number" value="10"><br>
+    <button type="button" onclick="CalcWhenLV6();">点我计算</button>
+    <h2>结果：</h2>
+    <b><p id="out"></p></b>
+</form>
+
+<p><a href="https://gitlab.com/gordonwalkedby/hexoblog/blob/master/source/Tscripts/whenlv6.ts" target="_blank" rel="noopener">本计算器的源码</a><br><a href="https://www.bilibili.com/video/av63407383" target="_blank" rel="noopener">B站讲解视频</a><br><a href="./donateme/">喜欢的话，赏点钱给我好不好</a>  </p>
+<h1 id="当前计算准则："><a href="#当前计算准则：" class="headerlink" title="当前计算准则："></a>当前计算准则：</h1><ul>
+<li>为计算方便，“你一个月其实有几天能记得来B站做事刷经验”的这几天都视作每月的前几天</li>
+<li><a href="https://www.bilibili.com/blackboard/help.html#%E4%BC%9A%E5%91%98%E7%AD%89%E7%BA%A7%E7%9B%B8%E5%85%B3?id=7251c4ab69d44a8ebbbd276dea46d790" target="_blank" rel="noopener">B站六个等级</a>的经验值：0, 200, 1500, 4500, 10800, 28800</li>
+<li>这里只计算B站绑定了手机号的用户的等级，即经验最低为100</li>
+<li>每天登录：硬币+1,经验+5</li>
+<li>每天观看视频：经验+5</li>
+<li>给别人的视频投币一个：经验+10，每天最多+50</li>
+<li>自己的视频获得一个投币：经验+1，在每月的一日结算</li>
+<li>给别人充电花费一B币（一元钱）或承包番剧花费一B币（一元钱）：经验+1，因为此处不便估计所以也在每月的一日结算，B站实际为立刻结算，所以其实冲钱就能马上升级</li>
+<li>根据<a href="https://www.bilibili.com/video/av19231729" target="_blank" rel="noopener">av19231729</a>所说，投稿视频也可以硬币+1，经验+1，视频被收藏数每增加200硬币也+1，此处没有查到相关记录，不做计算</li>
+<li>风纪委员的奖励不做计算</li>
+<li>在B站直播每天可以开直播在线宝箱，最多一天开出内 (30+80+190)*3=900 个银瓜子</li>
+<li>在B站直播每月可以连续签到5天换666银瓜子，此处不做计算</li>
+<li>在B站直播购买月费会员或年费会员会立即附赠2-10万的银瓜子，此处不做计算</li>
+<li>在B站直播可以<a href="https://live.bilibili.com/exchange" target="_blank" rel="noopener">每天兑换700个银瓜子为一个硬币</a></li>
+</ul>
 
       
     </div>
@@ -122,7 +156,7 @@
 
   <nav id="page-nav">
     
-    <a class="extend prev" rel="prev" href="../7/">&laquo; 上一页</a><a class="page-number" href="../../">1</a><span class="space">&hellip;</span><a class="page-number" href="../6/">6</a><a class="page-number" href="../7/">7</a><span class="page-number current">8</span><a class="page-number" href="../9/">9</a><a class="page-number" href="../10/">10</a><span class="space">&hellip;</span><a class="page-number" href="../28/">28</a><a class="extend next" rel="next" href="../9/">下一页 &raquo;</a>
+    <a class="extend prev" rel="prev" href="../7/">&laquo; 上一页</a><a class="page-number" href="../../">1</a><span class="space">&hellip;</span><a class="page-number" href="../6/">6</a><a class="page-number" href="../7/">7</a><span class="page-number current">8</span><a class="page-number" href="../9/">9</a><a class="page-number" href="../10/">10</a><span class="space">&hellip;</span><a class="page-number" href="../29/">29</a><a class="extend next" rel="next" href="../9/">下一页 &raquo;</a>
   </nav>
 
 </section>
@@ -133,7 +167,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2019/">2019</a><span class="archive-list-count">13</span></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2018/">2018</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2017/">2017</a><span class="archive-list-count">7</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2019/">2019</a><span class="archive-list-count">14</span></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2018/">2018</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2017/">2017</a><span class="archive-list-count">7</span></li></ul>
     </div>
   </div>
 
@@ -144,6 +178,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="../../dotnetframeworkingithubactions/">使用 GitHub Actions 编译 .NET Framework 程序</a>
+          </li>
         
           <li>
             <a href="../../webtest/">用来测试网络的网址收藏</a>
@@ -175,10 +213,6 @@
         
           <li>
             <a href="../../gtaivsavedgames/">Steam正版GTA4存档导入的正确姿势</a>
-          </li>
-        
-          <li>
-            <a href="../../steam-countries/">Steam 各国家区域的价格、锁区情况梗概</a>
           </li>
         
       </ul>

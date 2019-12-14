@@ -6,10 +6,32 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://walkedby.com/"/>
-  <updated>2019-12-09T12:38:56.201Z</updated>
+  <updated>2019-12-14T07:02:09.638Z</updated>
   <id>https://walkedby.com/</id>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用 GitHub Actions 编译 .NET Framework 程序</title>
+    <link href="https://walkedby.com/dotnetframeworkingithubactions/"/>
+    <id>https://walkedby.com/dotnetframeworkingithubactions/</id>
+    <published>2019-12-14T05:30:46.000Z</published>
+    <updated>2019-12-14T05:30:46.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;非常有意思，GitHub Actions 里自带有 Windows Server 的镜像，还预装了 Visual Studio ，可谓很爽了。&lt;br&gt;新建一个下面这样的 workflow 到你的项目即可在push的时候让 github 给你编译 .net
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>用来测试网络的网址收藏</title>
@@ -436,28 +458,6 @@
         
         
           &lt;p&gt;翻译：戈登走過去&lt;br&gt;译者注：&lt;br&gt;本文的原文是刊登在 GMod 官方博客里的文章《&lt;a href=&quot;https://gmod.facepunch.com/blog/gmod-stories--the-making-of-haven/&quot; target=&quot;_blank&quot;
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>在 VB.NET 里进行文件拖入和拖出的方法</title>
-    <link href="https://walkedby.com/how-to-drag-in-vb/"/>
-    <id>https://walkedby.com/how-to-drag-in-vb/</id>
-    <published>2018-01-05T16:00:00.000Z</published>
-    <updated>2018-01-05T16:00:00.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;写此文的实际目的：我自己会忘记，给我自己用的。（误）&lt;br&gt;不得不说， Drag
         
       
     
