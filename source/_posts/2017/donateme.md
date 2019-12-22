@@ -8,9 +8,9 @@ tags:
 谢谢各位同志对我的支持。  
 
 # 微信扫码支付：  
-![](../images/wx.jpg)   
+![](/images/wx.jpg)   
 # 手机端可以点击图片直接打开支付宝：  
-[![](../images/zfb.jpg)](HTTPS://QR.ALIPAY.COM/FKX06012TLI0DHWAL1QDD6)  
+[![](/images/zfb.jpg)](HTTPS://QR.ALIPAY.COM/FKX06012TLI0DHWAL1QDD6)  
 # B站充电，最好是用B币券：
 [https://space.bilibili.com/4523834](https://space.bilibili.com/4523834)   
 # Steam 物品赠送：
