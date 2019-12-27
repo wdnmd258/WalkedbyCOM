@@ -11,23 +11,27 @@ tags:
 Windows 7 SP1 或以上
 [.NET Framework 4.6 或以上](https://dotnet.microsoft.com/download/dotnet-framework/net48)
 
-# 手机端运行要求：
-能连接 Wi-Fi
-安装有一个现代浏览器
+# 手机端要求：
+能连接 Wi-Fi  
+安装有一个现代浏览器  
+安卓、iOS、WP 都行  
+甚至满足以上两个条件的功能机  
 
 # 目前最新版本： 
-v0.3  
-2019年10月7日更新  
+v0.4  
+2019年12月27日更新   
+[更新记录](https://github.com/gordonwalkedby/remote-task-manager/releases)  
 
 # 下载链接：
-[从 GitLab 下载](https://gitlab.com/gordonwalkedby/remote-task-manager/raw/master/Versions/v03.7z)
+[从 GitHub 下载](https://github.com/gordonwalkedby/remote-task-manager/releases/download/v0.4/RemoteTaskManager.7z)  
 
-# 帮助文档： 
+
+# 说明文档： 
 强烈建议第一次使用的人看完：  
 https://shimo.im/docs/xc9gDVw8DtcYKRvr
 
 # 源码：
-https://gitlab.com/gordonwalkedby/remote-task-manager
+https://github.com/gordonwalkedby/remote-task-manager
 
 # 软件截图：  
 ![](https://s2.ax1x.com/2019/10/01/uNfb1f.png)  
