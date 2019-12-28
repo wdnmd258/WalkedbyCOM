@@ -4,13 +4,20 @@ date: 2019-02-02
 ---
 下面列出的软件都是我的早期作品，已经不再更新或管理，需要的自己下载，有问题就请保留 ;w; 
 
+# 半条命风格WinForm控件库 
+Half Life Style Controls  
+一套自制的半条命（老Steam）风格的 Windows Forms 控件库。  
+已经不再提供，最后更新于2019年3月。
+
+![](https://s2.ax1x.com/2019/02/13/k04AXT.gif)
+
 # CSGOUIx
 CSGO 全景 UI 主菜单人物模型修改器。
 
 ![](https://s1.ax1x.com/2018/07/16/PQ6Dc4.png)
 
 最后更新于：2018年7月17日  
-[点我下载](https://raw.githubusercontent.com/gordonwalkedby/WalkedbyCOM/master/my_old_softwares/CSGOUIx.zip)
+[点我下载](https://raw.githubusercontent.com/gordonwalkedby/WalkedbyCOM/master/my_old_softwares/CSGOUIx.zip)  
 
 # Qsycho 的大冒险
 一个小游戏，老Q要大步向前走，但是今天他碰到了很多很多的障碍物。你只需要按键盘上的 ↑ 键就可以让老Q跳起来。试着跳过障碍物，但是不是所有的东西都是障碍物（比如硬币、枪、盾牌）。

@@ -262,29 +262,6 @@
   </entry>
   
   <entry>
-    <title>半条命风格WinForm控件库</title>
-    <link href="https://walkedby.com/halflifecontrols/"/>
-    <id>https://walkedby.com/halflifecontrols/</id>
-    <published>2019-02-12T16:00:00.000Z</published>
-    <updated>2019-02-12T16:00:00.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;Half Life Style Controls&lt;/p&gt;
-&lt;p&gt;一套自制的半条命（老Steam）风格的 Windows Forms 控件库，需要 .NET Framework 4.5 或以上，支持 C# 和
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>使用 CPU-Z 来分享你的电脑配置信息</title>
     <link href="https://walkedby.com/usecpuz/"/>
     <id>https://walkedby.com/usecpuz/</id>
@@ -322,7 +299,7 @@
         
         
           &lt;p&gt;下面列出的软件都是我的早期作品，已经不再更新或管理，需要的自己下载，有问题就请保留 ;w; &lt;/p&gt;
-&lt;h1 id=&quot;CSGOUIx&quot;&gt;&lt;a href=&quot;#CSGOUIx&quot; class=&quot;headerlink&quot;
+&lt;h1 id=&quot;半条命风格WinForm控件库&quot;&gt;&lt;a href=&quot;#半条命风格WinForm控件库&quot; class=&quot;headerlink&quot;
         
       
     
@@ -458,6 +435,28 @@
         
         
           &lt;p&gt;翻译：戈登走過去&lt;br&gt;译者注：&lt;br&gt;本文的原文是刊登在 GMod 官方博客里的文章《&lt;a href=&quot;https://gmod.facepunch.com/blog/gmod-stories--the-making-of-haven/&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>在 VB.NET 里进行文件拖入和拖出的方法</title>
+    <link href="https://walkedby.com/how-to-drag-in-vb/"/>
+    <id>https://walkedby.com/how-to-drag-in-vb/</id>
+    <published>2018-01-05T16:00:00.000Z</published>
+    <updated>2018-01-05T16:00:00.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;写此文的实际目的：我自己会忘记，给我自己用的。（误）&lt;br&gt;不得不说， Drag
         
       
     

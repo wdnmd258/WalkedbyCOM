@@ -76,10 +76,10 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-how-to-drag-in-vb" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-vegetarian" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="../../how-to-drag-in-vb/" class="article-date">
-  <time datetime="2018-01-05T16:00:00.000Z" itemprop="datePublished">2018-01-06</time>
+    <a href="../../vegetarian/" class="article-date">
+  <time datetime="2018-01-02T13:16:38.000Z" itemprop="datePublished">2018-01-02</time>
 </a>
     
   </div>
@@ -90,7 +90,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="../../how-to-drag-in-vb/">在 VB.NET 里进行文件拖入和拖出的方法</a>
+      <a class="article-title" href="../../vegetarian/">我当素食者的故事</a>
     </h1>
   
 
@@ -98,22 +98,19 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>写此文的实际目的：我自己会忘记，给我自己用的。（误）<br>不得不说， Drag 真的是世界上最舒服的操作了，没什么比文件拽来拽去更省事的了。<br>之前看了一些讲解这个方面的文章，然后觉得都神了，简单的东西都给他们说的这么复杂。（害我当初也学了老久）<br>注意：我用的是 Visual Studio 2017。</p>
-<hr>
-<p>下面用例子先说明怎么拖入文件：<br>假设我需要把一排的文件拖入到一个列表里。<br>新增一个 ListBox 来放文件，我给起名叫 LB，然后把 AllowDrop 属性开成 True，这样才能让东西被拖进来。<br><img src="https://s1.ax1x.com/2018/01/06/pELw5t.png" alt>  </p>
-<p>然后在代码里新增需要两个事件，分别对应拖放操作的鼠标移动进来和鼠标松开（东西丢下）。<br>鼠标移动进来就是 DragEnter 事件，这里需要设置的是他的拖放效果。</p>
-<figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Private</span> <span class="keyword">Sub</span> LB_DragEnter(sender <span class="keyword">As</span> <span class="built_in">Object</span>, e <span class="keyword">As</span> DragEventArgs) <span class="keyword">Handles</span> LB.DragEnter</span><br><span class="line">    e.Effect = DragDropEffects.Link <span class="comment">'使用 link 就能获得拖入的东西的位置（目录）</span></span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Sub</span></span><br></pre></td></tr></table></figure>
-
-<p>然后要设置他的东西丢下事件，也就是 DragDrop 事件。因为拖入的文件可能不止一个，所以需要把拖入的文件信息全部过一遍。  </p>
-<figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Private</span> <span class="keyword">Sub</span> LB_DragDrop(sender <span class="keyword">As</span> <span class="built_in">Object</span>, e <span class="keyword">As</span> DragEventArgs) <span class="keyword">Handles</span> LB.DragDrop</span><br><span class="line">    <span class="keyword">For</span> <span class="keyword">Each</span> i <span class="keyword">As</span> <span class="built_in">String</span> <span class="keyword">In</span> e.Data.GetData(DataFormats.FileDrop)  <span class="comment">'你拽入的每个东西</span></span><br><span class="line">        LB.Items.Add(i)	<span class="comment">'把每个东西添加到列表里</span></span><br><span class="line">    <span class="keyword">Next</span></span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Sub</span></span><br></pre></td></tr></table></figure>
-
-<p>如果你想过滤一些文件，只要对文件链接这个字符串进行过滤就行了，<br>如果想一拖入就读取文件的信息的话，也和 DragDrop 写在一起就是了。<br>实际效果：<br><img src="https://s1.ax1x.com/2018/01/06/pEXW90.gif" alt>  </p>
-<hr>
-<p>下面再来一个例子说明怎么拖出文件：<br>假设我需要把一个文本框里的信息直接拖出来变成 a.txt 。<br>首先来一个文本框，依然需要 AllowDrop = True 。<br>这里我用一个 RichTextBox ，起名叫 RR 好了。<br><img src="https://s1.ax1x.com/2018/01/06/pEjCEd.png" alt><br>什么？没有 AllowDrop ，我也很好奇为什么 RichTextBox 没有这个属性，这个直接在代码里写成 True 就是了。<br><img src="https://s1.ax1x.com/2018/01/06/pEji4I.png" alt><br>拖出和拖入不一样，拖入的本质是提取文件的位置为字符串，而拖出的本质是复制存在的文件到目的地，并不是让程序直接在目的地直接创造文件。<br>我们怎么拖出呢？我们直接从文本框里拖吧！省事！<br>给文本框加一个 MouseDown 事件，让鼠标按住的时候可以拖放。  </p>
-<figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Private</span> <span class="keyword">Sub</span> RR_MouseDown(sender <span class="keyword">As</span> <span class="built_in">Object</span>, e <span class="keyword">As</span> MouseEventArgs) <span class="keyword">Handles</span> RR.MouseDown</span><br><span class="line">    <span class="comment">'必须定义一个数组存储要复制的文件列表，这里就一个文件，所以为0</span></span><br><span class="line">    <span class="keyword">Dim</span> s(<span class="number">0</span>) <span class="keyword">As</span> <span class="built_in">String</span></span><br><span class="line">    <span class="comment">'中文只是我自己的函数罢了;w;别介意，看得懂就行，同样的功能你自己写就好了</span></span><br><span class="line">    s(<span class="number">0</span>) = 程序目录() + <span class="string">"a.txt"</span></span><br><span class="line">    <span class="comment">'把 RR 的文本写到程序目录下的 a.txt 文件中</span></span><br><span class="line">    写(s(<span class="number">0</span>), 回车规范(RR.<span class="keyword">Text</span>))</span><br><span class="line">    <span class="comment">'下面就是开始拖放啦，需要一个新的 DataObject 物件，然后写入刚刚的 s 数组，以复制的形式拖放到外面。</span></span><br><span class="line">    RR.DoDragDrop(<span class="keyword">New</span> DataObject(DataFormats.FileDrop, s), DragDropEffects.Copy)</span><br><span class="line">    <span class="comment">'把生成的多余文件给删除了</span></span><br><span class="line">    删除文件(s(<span class="number">0</span>))</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Sub</span></span><br></pre></td></tr></table></figure>
-
-<p>实际效果：<br><img src="https://s1.ax1x.com/2018/01/06/pExOCn.gif" alt><br>当然，实际上是不鼓励你直接用一个文本框来拖拉的，因为那样的话你文本的选择也是个难题了。  </p>
-<p>建议不要把拖入和拖出做在一起，要么加个去重的功能，否则你就等着看鼠标点一下自己拖一份复制给自己吧。<br><img src="https://s1.ax1x.com/2018/01/06/pV94iQ.gif" alt><br>希望这篇短短的文章可以给你一些帮助~ </p>
+        <p>其实我是个蛋奶素啦，吃素食的同时也可以吃蛋制品和奶制品，也算是素食者的一种。<br>今天突然发奋想写个文章说下我作为素食者的一些经历。  </p>
+<p>我也不是一开始就吃素的，大概是初三开始吃素的，到现在也有 1-2 年了吧。<br>吃素之前我就挺讨厌吃肉的，然后初三因为一些不高兴的事情决定再也不吃肉了，就成为了蛋奶素。<br>然后我发现这也忒过瘾了，只要不吃肉，几乎都是我爱吃的 ;w; 神了。<br>（当然了，我目前吃过的菜里的极其难吃的异类：白木耳、莲子）<br>我吃素的其实主要还是因为味道（口感）原因，受不了那味道了。<br>没有什么宗教信仰因素（我目前不信仰任何宗教），也不是为了全球环境的变好（据说养起来的牲畜产生的温室气体非常多），更不是什么为了保护小动物（我依然反对虐待任何生命，但是养起来就是为了吃掉你，这没什么问题）<br>（我觉得烤肉啊 KFC 啊什么的还是好吃的，但是吃那些玩意又不健康，直接抛弃掉算了。）  </p>
+<p>父母一开始很生气，但是我知道，不坚持下去，我怎么见人 ;w;<br>努力努力~只要保住自己的承诺，然后就一直吃素吃素，一直坚持到现在。<br>迫于实际，我唯一吃的肉可能就是动物油，因为我吃不出各种油的味道的差距，我也不知道他们做菜用的什么油。  </p>
+<p>后来有几次学校老师单独请客出来吃饭。<br>声称自己是素食者之后感觉，哇，真刁难老师。<br>不过最起码，老师懂得尊重我的素食的饮食习惯了。<br>点的菜都是素的，（什么不要肉酱的肉酱意大利面）<br>不像我父母或者我大部分的亲戚，只知道一天到晚用各种方法想逼我吃肉。<br>“我尊重你喜欢吃肉的饮食风格，也请你尊重我。”<br>“是啊，我知道肉很好吃，但是你一定要逼我到我咬俩口吐给你看然后你都看的不想吃东西为止吗！”<br>“啊额~”（已经吐出来嘴巴里的东西，面部表情扭曲）  </p>
+<p>还有就是我母亲之前有想拉我去做按摩，我肯定不想去浪费时间啊。<br>母亲还故意说：“你知道吗？那个店主也是个吃素的。你们交个朋友吧。”<br>我：“啊？他吃素？”<br>母亲：“是啊，他说他一年只吃几次肉而已，吃的很少。”<br>我：“那你看他快死了吗？你不是说只吃素会营养不良吗？他是不是已经奄奄一息了啊！”<br>（我知道，父母的诚信极差）  </p>
+<p>吃素的坏处（参考互联网的一些资料以及我一直相信的）：  </p>
+<ul>
+<li>体重快速下降或者停滞不前  </li>
+<li>缺乏维生素 B12 和铁（铁在素食里是硬伤，其他的在菜里几乎都能吃到）  </li>
+<li>在一些地方被人误会甚至歧视（导致可能性的食物浪费）  </li>
+</ul>
+<p>但是不管怎么样，我要坚持下去，到死亡或者地球上已经变得不适合普通人吃素为止。<br>大概就是这么个情况。<br>希望有一天，素食者也可以被大部分人正确的对待。  </p>
+<p>一些科普视频：<br><a href="https://www.bilibili.com/video/av36071772" target="_blank" rel="noopener">https://www.bilibili.com/video/av36071772</a><br><a href="https://www.bilibili.com/video/av23001770" target="_blank" rel="noopener">https://www.bilibili.com/video/av23001770</a>  </p>
 
       
     </div>
@@ -134,7 +131,7 @@
 
   <nav id="page-nav">
     
-    <a class="extend prev" rel="prev" href="../20/">&laquo; 上一页</a><a class="page-number" href="../../">1</a><span class="space">&hellip;</span><a class="page-number" href="../19/">19</a><a class="page-number" href="../20/">20</a><span class="page-number current">21</span><a class="page-number" href="../22/">22</a><a class="page-number" href="../23/">23</a><span class="space">&hellip;</span><a class="page-number" href="../29/">29</a><a class="extend next" rel="next" href="../22/">下一页 &raquo;</a>
+    <a class="extend prev" rel="prev" href="../20/">&laquo; 上一页</a><a class="page-number" href="../../">1</a><span class="space">&hellip;</span><a class="page-number" href="../19/">19</a><a class="page-number" href="../20/">20</a><span class="page-number current">21</span><a class="page-number" href="../22/">22</a><a class="page-number" href="../23/">23</a><span class="space">&hellip;</span><a class="page-number" href="../28/">28</a><a class="extend next" rel="next" href="../22/">下一页 &raquo;</a>
   </nav>
 
 </section>
@@ -145,7 +142,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2019/">2019</a><span class="archive-list-count">14</span></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2018/">2018</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2017/">2017</a><span class="archive-list-count">7</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2019/">2019</a><span class="archive-list-count">13</span></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2018/">2018</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2017/">2017</a><span class="archive-list-count">7</span></li></ul>
     </div>
   </div>
 
