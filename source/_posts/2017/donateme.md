@@ -11,10 +11,8 @@ tags:
 ![](/images/wx.jpg)   
 # 手机端可以点击图片直接打开支付宝：  
 [![](/images/zfb.jpg)](HTTPS://QR.ALIPAY.COM/FKX06012TLI0DHWAL1QDD6)  
-# B站充电，最好是用B币券：
+# B站充电，最好是用大会员送的B币券：
 [https://space.bilibili.com/4523834](https://space.bilibili.com/4523834)   
-# Steam 物品赠送：
-[https://steamcommunity.com/tradeoffer/new/?partner=139200659&token=oKb0w0nA](https://steamcommunity.com/tradeoffer/new/?partner=139200659&token=oKb0w0nA)
 
 
 如果你有其他方式（实物、比特币等）想给我捐助的话，请主动联系我。  

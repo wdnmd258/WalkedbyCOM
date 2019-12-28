@@ -33,7 +33,11 @@ jobs:
           name: compiled_files
           path: <outputPath>  #这里写编译出来的文件夹的路径，一般是  ./xx/bin/Debug 这种
 ```
-在 Windows 上运行的 steps 都是用 PowerShell 6 来运行的，也就意味着你想写更复杂的玩意可能最好还是学一下 PowerShell 。  
+
+
+在 Windows 上运行的 steps 都是用 PowerShell 6 来运行的。  
 如果你想使用绝对路径，Github 都是把咱们的项目放在 ```d:\a\XXX\XXX``` 文件夹里，XXX是你的项目名字，是的，文件夹有两层，不是分支名。  
 不要试着用命令切换工作文件夹，因为工作机制的关系，工作文件夹永远都在项目根目录，应该在 step 内使用 working-directory 参数。  
 ![](https://s2.ax1x.com/2019/12/14/QRuhSe.png)  
+
+一个现成的示例 https://github.com/gordonwalkedby/OnsetPackageJsonCreater/blob/master/.github/workflows/main.yml

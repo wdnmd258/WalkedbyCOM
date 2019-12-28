@@ -21,10 +21,7 @@ Do While True
     Dim c As HttpListenerContext = h.GetContext
     Dim RQ As HttpListenerRequest = c.Request
     Dim RS As HttpListenerResponse = c.Response
-    s = Now & vbCrLf & 随机.数字()  '随便写点东西发过去
-    bs = 文字转字节(s)
-    Dp(RQ.Url.ToString, RQ.UserAgent)
-    RS.OutputStream.Write(bs, 0, bs.Length)
+    RS.OutputStream.WriteByte(70)
     RS.Close()
 Loop
 ```
@@ -39,8 +36,11 @@ http://127.0.0.1:8989/
 ```
 
 接下来，如果你开着 Windows 防火墙，那么基本上只有你自己这台电脑可以靠访问这个链接。  
-怎么办呢？而且需要管理员权限才能实时创建监听。  
-我们得管理员运行下面 CMD 指令：
+使用 [Mono 提供的 HTTPListener](https://www.nuget.org/packages/Mono.Net.HttpListener/) 就可以弹出普通的防火墙请求窗口。  
+
+但是给 .NET Framework 自带的 HTTPListener 解开防火墙，就得按照下面办法来：  
+要么每次都用管理员权限打开才程序。  
+要么就在软件安装时运行下面 CMD 指令：
 
 ```cmd
 netsh http add urlacl url=http://localhost:8900/ user=Everyone
