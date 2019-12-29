@@ -7,17 +7,17 @@ tags:
 
 <script src="/scripts/whenlv6.js"></script>
 
-<form id="calc" style="border: medium ridge black; max-width: 500px; padding: 10px;">
+<form id="calc" style="border: medium ridge black; width: 80%; padding: 10px;">
     <h2>请在下面填写你帐号目前的情况：</h2>
-    经验值：<input id="ex" type="number" value="1000"><br>
-    拥有的硬币数量：<input id="coins" type="number" value="10"><br>
-    <input id="doCoins" type="checkbox" value="y" checked="checked"> 会每天给别人的视频投币5个（不足5个就投光你有的为止）<br>
-    <input id="doShare" type="checkbox" value="y" checked="checked"> 会每天用手机APP分享视频<br>
-    你投稿一个视频大概收到几个硬币：<input id="videocoins" type="number" value="0"><br>
-    你一个月大概投稿几个视频：<input id="videos" type="number" value="0"><br>
-    你一个月大概花多少B币给别的UP主充电（或给某番剧承包花钱）：<input id="sends" type="number" value="0"><br>
-    <input id="doLive" type="checkbox" value="y" checked="checked"> 会每天去B站直播那签到，并领取全部9个直播宝箱的900个银瓜子并换700个变成一个硬币<br>
-    你一个月其实有几天能记得来B站做事刷经验：<input id="days" type="number" value="10"><br>
+    经验值：<input id="ex" type="number" value="1000"><br><br>
+    拥有的硬币数量：<input id="coins" type="number" value="10"><br><br>
+    <input id="doCoins" type="checkbox" value="y" checked="checked"> 会每天给别人的视频投币5个（不足5个就投光你有的为止）<br><br>
+    <input id="doShare" type="checkbox" value="y" checked="checked"> 会每天用手机APP分享视频<br><br>
+    你投稿一个视频大概收到几个硬币（没有视频请写0）：<input id="videocoins" type="number" value="0"><br><br>
+    你一个月大概投稿几个视频：<input id="videos" type="number" value="0"><br><br>
+    你一个月大概花多少B币给别的UP主充电（或给某番剧承包花钱）：<input id="sends" type="number" value="0"><br><br>
+    <input id="doLive" type="checkbox" value="y" checked="checked"> 会每天去B站直播那签到，并领取全部9个直播宝箱的900个银瓜子并换700个变成一个硬币<br><br>
+    你一个月其实有几天能记得来B站做事刷经验：<input id="days" type="number" value="10"><br><br>
     <button type="button" onclick="CalcWhenLV6();" >点我计算</button>
     <h2>结果：</h2>
     <b><p id="out"></p></b>
@@ -25,7 +25,7 @@ tags:
 
 [本计算器的源码](https://gitlab.com/gordonwalkedby/hexoblog/blob/master/source/Tscripts/whenlv6.ts)  
 [B站讲解视频](https://www.bilibili.com/video/av63407383)  
-[喜欢的话，赏点钱给我好不好](/donateme/)  
+[求打赏](/donateme/)  
 
 # 当前计算准则：  
 
@@ -43,3 +43,4 @@ tags:
 - 在B站直播每月可以连续签到5天换666银瓜子，此处不做计算
 - 在B站直播购买月费会员或年费会员会立即附赠2-10万的银瓜子，此处不做计算
 - 在B站直播可以[每天兑换700个银瓜子为一个硬币](https://live.bilibili.com/exchange)
+- 当风纪委员，可以获得一定量的硬币，具体计算我并不知情，此处不做计算
