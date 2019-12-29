@@ -29,8 +29,8 @@ i18n_dir: :lang
 skip_render: 
  - '404.html'
  - 'other/**'
+ - 'js/**'
  - 'scripts/**'
- - 'Tscripts/**'
 
 
 # Writing

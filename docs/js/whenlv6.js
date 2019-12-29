@@ -107,7 +107,30 @@ function CalcWhenLV6() {
                 }
             }
             donedays += 1;
-            if (donedays <= workdays) { coins +="1;" ex if (doshare) } (dolive) (docoins) for (i="1;" i <="5;" -="1;" (coins 1) (!outofcoins) outofcoins="true;" out "，你的硬币花完了。\n"; break; var finish="false;"> passed; i -= 1) {
+            if (donedays <= workdays) {
+                coins += 1;
+                ex += 10;
+                if (doShare) {
+                    ex += 5;
+                }
+                if (doLive) {
+                    coins += 1;
+                }
+                if (doCoins) {
+                    for (i = 1; i <= 5; i += 1) {
+                        coins -= 1;
+                        ex += 10;
+                        if (coins < 1) {
+                            if (!outofCoins) {
+                                outofCoins = true;
+                                out += GetTime() + "，你的硬币花完了。\n";
+                            }
+                            break;
+                        }
+                    }
+                }
+                var finish = false;
+                for (i = maxlevels; i > passed; i -= 1) {
                     if (ex > levels[i - 1]) {
                         out += GetTime() + "，你到达了 " + i.toString() + " 级，这时你还有 " + coins.toString() + " 个硬币。\n";
                         passed = i;
@@ -122,7 +145,7 @@ function CalcWhenLV6() {
                 }
             }
         }
-        out += "\n以上结果仅供参考，很可能会因为你的行为、B站活动、B站修改规则等情况而变化。";
+        out += "\n以上结果仅供参考，可能会因为你的行为、B站活动、B站修改规则等情况而变化。";
     }
     var outPlace = document.querySelector("#out");
     if (outPlace == null) {
@@ -130,4 +153,3 @@ function CalcWhenLV6() {
     }
     outPlace.innerText = out;
 }
-</=>

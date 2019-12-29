@@ -145,7 +145,7 @@ function CalcWhenLV6() {
                 }
             }
         }
-        out += "\n以上结果仅供参考，很可能会因为你的行为、B站活动、B站修改规则等情况而变化。";
+        out += "\n以上结果仅供参考，可能会因为你的行为、B站活动、B站修改规则等情况而变化。";
     }
     var outPlace = document.querySelector("#out");
     if (outPlace == null) {
