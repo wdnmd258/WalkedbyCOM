@@ -1,7 +1,7 @@
 ---
 title: 介绍MLG美式鬼畜及其来历+常用素材下载
 date: 2017-05-21 07:54:54
-tags:
+tags: 视频创作
 ---
 
 > 以下内容的一部分选取，参考和翻译自 [Know Your Meme](https://a.kym-cdn.com/memes/montage-parodies) 。

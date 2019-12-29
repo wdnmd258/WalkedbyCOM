@@ -22,7 +22,7 @@ friends:
 
 
 rss: /atom.xml
-banner: "images/banner.jpg"
+banner: "/images/banner.jpg"
 
 # Content
 excerpt_link: Read More
@@ -32,6 +32,7 @@ fancybox: false
 sidebar: right
 widgets:
 - recent_posts
+- tag
 - googleadsense
 
 
@@ -42,7 +43,7 @@ index_widgets:
 # - archive
 
 # widget behavior
-archive_type: 'yearly'
+archive_type: 'all'
 show_count: true
 
 # Miscellaneous

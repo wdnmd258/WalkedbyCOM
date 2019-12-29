@@ -1,7 +1,7 @@
 ---
 title: 使用 GitHub Actions 编译 .NET Framework 程序
 date: 2019-12-14 13:30:46
-tags:
+tags: .NET
 ---
 非常有意思，GitHub Actions 里自带有 Windows Server 的镜像，还预装了 Visual Studio ，可谓很爽了。  
 新建一个下面这样的 workflow 到你的项目即可在push的时候让 github 给你编译 .net framework 程序。  

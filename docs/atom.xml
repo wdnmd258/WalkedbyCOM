@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://walkedby.com/"/>
-  <updated>2019-12-28T01:36:29.943Z</updated>
+  <updated>2019-12-29T13:16:35.983Z</updated>
   <id>https://walkedby.com/</id>
   
   <generator uri="http://hexo.io/">Hexo</generator>
@@ -30,6 +30,8 @@
     
     </summary>
     
+    
+      <category term=".NET" scheme="https://walkedby.com/tags/NET/"/>
     
   </entry>
   
@@ -55,6 +57,8 @@
     </summary>
     
     
+      <category term="科普" scheme="https://walkedby.com/tags/%E7%A7%91%E6%99%AE/"/>
+    
   </entry>
   
   <entry>
@@ -76,6 +80,8 @@
     
     </summary>
     
+    
+      <category term="我的软件" scheme="https://walkedby.com/tags/%E6%88%91%E7%9A%84%E8%BD%AF%E4%BB%B6/"/>
     
   </entry>
   
@@ -99,6 +105,8 @@
     </summary>
     
     
+      <category term="科普" scheme="https://walkedby.com/tags/%E7%A7%91%E6%99%AE/"/>
+    
   </entry>
   
   <entry>
@@ -120,6 +128,8 @@
     
     </summary>
     
+    
+      <category term="科普" scheme="https://walkedby.com/tags/%E7%A7%91%E6%99%AE/"/>
     
   </entry>
   
@@ -144,6 +154,8 @@
     </summary>
     
     
+      <category term="我的软件" scheme="https://walkedby.com/tags/%E6%88%91%E7%9A%84%E8%BD%AF%E4%BB%B6/"/>
+    
   </entry>
   
   <entry>
@@ -166,6 +178,8 @@
     </summary>
     
     
+      <category term="科普" scheme="https://walkedby.com/tags/%E7%A7%91%E6%99%AE/"/>
+    
   </entry>
   
   <entry>
@@ -182,14 +196,16 @@
         
         
           &lt;p&gt;在下面输入你的B站信息，然后我就可以计算出你还有多久才可以升级到 LV6 。&lt;/p&gt;
-&lt;script src=&quot;/scripts/whenlv6.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/js/whenlv6.js&quot;&gt;&lt;/script&gt;
 
-&lt;form id=&quot;calc&quot; style=&quot;border: medium ridge
+&lt;form id=&quot;calc&quot; style=&quot;border: medium ridge black;
         
       
     
     </summary>
     
+    
+      <category term="我的软件" scheme="https://walkedby.com/tags/%E6%88%91%E7%9A%84%E8%BD%AF%E4%BB%B6/"/>
     
   </entry>
   
@@ -212,6 +228,8 @@
     
     </summary>
     
+    
+      <category term="科普" scheme="https://walkedby.com/tags/%E7%A7%91%E6%99%AE/"/>
     
   </entry>
   
@@ -236,6 +254,8 @@
     </summary>
     
     
+      <category term="科普" scheme="https://walkedby.com/tags/%E7%A7%91%E6%99%AE/"/>
+    
   </entry>
   
   <entry>
@@ -258,6 +278,8 @@
     
     </summary>
     
+    
+      <category term="起源开发" scheme="https://walkedby.com/tags/%E8%B5%B7%E6%BA%90%E5%BC%80%E5%8F%91/"/>
     
   </entry>
   
@@ -283,6 +305,8 @@
     </summary>
     
     
+      <category term="科普" scheme="https://walkedby.com/tags/%E7%A7%91%E6%99%AE/"/>
+    
   </entry>
   
   <entry>
@@ -305,6 +329,8 @@
     
     </summary>
     
+    
+      <category term="我的软件" scheme="https://walkedby.com/tags/%E6%88%91%E7%9A%84%E8%BD%AF%E4%BB%B6/"/>
     
   </entry>
   
@@ -330,6 +356,8 @@
     </summary>
     
     
+      <category term="起源开发" scheme="https://walkedby.com/tags/%E8%B5%B7%E6%BA%90%E5%BC%80%E5%8F%91/"/>
+    
   </entry>
   
   <entry>
@@ -351,6 +379,8 @@
     
     </summary>
     
+    
+      <category term=".NET" scheme="https://walkedby.com/tags/NET/"/>
     
   </entry>
   
@@ -374,6 +404,8 @@
     </summary>
     
     
+      <category term="日常" scheme="https://walkedby.com/tags/%E6%97%A5%E5%B8%B8/"/>
+    
   </entry>
   
   <entry>
@@ -395,6 +427,8 @@
     
     </summary>
     
+    
+      <category term="网站技术" scheme="https://walkedby.com/tags/%E7%BD%91%E7%AB%99%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
@@ -419,6 +453,8 @@
     </summary>
     
     
+      <category term="科普" scheme="https://walkedby.com/tags/%E7%A7%91%E6%99%AE/"/>
+    
   </entry>
   
   <entry>
@@ -441,6 +477,8 @@
     </summary>
     
     
+      <category term="科普" scheme="https://walkedby.com/tags/%E7%A7%91%E6%99%AE/"/>
+    
   </entry>
   
   <entry>
@@ -462,6 +500,8 @@
     
     </summary>
     
+    
+      <category term=".NET" scheme="https://walkedby.com/tags/NET/"/>
     
   </entry>
   

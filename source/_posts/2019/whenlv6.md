@@ -1,11 +1,11 @@
 ---
 title: B站六级计算器
 date: 2019-08-11 09:27:58
-tags:
+tags: 我的软件
 ---
 在下面输入你的B站信息，然后我就可以计算出你还有多久才可以升级到 LV6 。
 
-<script src="/scripts/whenlv6.js"></script>
+<script src="/js/whenlv6.js"></script>
 
 <form id="calc" style="border: medium ridge black; width: 80%; padding: 10px;">
     <h2>请在下面填写你帐号目前的情况：</h2>

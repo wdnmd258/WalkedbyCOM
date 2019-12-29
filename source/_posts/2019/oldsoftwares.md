@@ -1,6 +1,7 @@
 ---
 title: 早期软件集合
 date: 2019-02-02
+tags: 我的软件
 ---
 下面列出的软件都是我的早期作品，已经不再更新或管理，需要的自己下载，有问题就请保留 ;w; 
 
@@ -10,6 +11,11 @@ Half Life Style Controls
 已经不再提供，最后更新于2019年3月。
 
 ![](https://s2.ax1x.com/2019/02/13/k04AXT.gif)
+
+# 走過去的工具箱
+![](https://tools.walkedby.com/s1.jpg)  
+最后更新于 2019 年 05 月 09 日  
+https://tools.walkedby.com
 
 # CSGOUIx
 CSGO 全景 UI 主菜单人物模型修改器。
