@@ -46,7 +46,7 @@ archive_type: 'yearly'
 show_count: true
 
 # Miscellaneous
-google_analytics:
+google_analytics: 'UA-155147844-1'
 gauges_analytics:
 favicon: /favicon.ico
 twitter:
