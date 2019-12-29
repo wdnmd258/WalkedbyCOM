@@ -9,7 +9,7 @@ tags:
 
 # 微信扫码支付：  
 ![](/images/wx.jpg)   
-# 手机端可以点击图片直接打开支付宝：  
+# 支付宝：  
 [![](/images/zfb.jpg)](HTTPS://QR.ALIPAY.COM/FKX06012TLI0DHWAL1QDD6)  
 # B站充电，最好是用大会员送的B币券：
 [https://space.bilibili.com/4523834](https://space.bilibili.com/4523834)   
