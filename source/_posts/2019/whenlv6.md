@@ -23,7 +23,7 @@ tags:
     <b><p id="out"></p></b>
 </form>
 
-[本计算器的源码](https://gitlab.com/gordonwalkedby/hexoblog/blob/master/source/Tscripts/whenlv6.ts)  
+[本计算器的源码](https://gist.github.com/gordonwalkedby/223f5f24bcca28d9407bfe5cb6bfa9c6)  
 [B站讲解视频](https://www.bilibili.com/video/av63407383)  
 [求打赏](/donateme/)  
 
