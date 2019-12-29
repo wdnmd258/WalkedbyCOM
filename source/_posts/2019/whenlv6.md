@@ -25,7 +25,7 @@ tags:
 
 [本计算器的源码](https://gitlab.com/gordonwalkedby/hexoblog/blob/master/source/Tscripts/whenlv6.ts)  
 [B站讲解视频](https://www.bilibili.com/video/av63407383)  
-[喜欢的话，赏点钱给我好不好](./donateme/)  
+[喜欢的话，赏点钱给我好不好](/donateme/)  
 
 # 当前计算准则：  
 

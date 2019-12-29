@@ -15,6 +15,9 @@ tags:
 
 我是**粗体abc**，我是*斜体xyz*，对吗？
 
+[查看本站sitemap.xml](/sitemap.xml)
+[测试 http://www.](http://www.walkedby.com/)
+
 H1-H6:  
 
 # 标题1，你`能x`*斜体*看见**粗体**吗[dd](https://ww.baidu.com)超链接 #

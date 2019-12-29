@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://walkedby.com/sandbox/</loc>
+    <lastmod>2017-01-03</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://walkedby.com/whenlv6/</loc>
+    <lastmod>2019-08-11</lastmod>
+  </url>
+  
+  <url>
     <loc>https://walkedby.com/HTTPLISTNERoverLAN/</loc>
     <lastmod>2018-11-10</lastmod>
   </url>
@@ -32,11 +42,6 @@
   </url>
   
   <url>
-    <loc>https://walkedby.com/whenlv6/</loc>
-    <lastmod>2019-08-11</lastmod>
-  </url>
-  
-  <url>
     <loc>https://walkedby.com/webtest/</loc>
     <lastmod>2019-10-07</lastmod>
   </url>
@@ -52,13 +57,13 @@
   </url>
   
   <url>
-    <loc>https://walkedby.com/steamfriendschecker/</loc>
-    <lastmod>2019-08-17</lastmod>
+    <loc>https://walkedby.com/steam-countries/</loc>
+    <lastmod>2019-08-04</lastmod>
   </url>
   
   <url>
-    <loc>https://walkedby.com/steam-countries/</loc>
-    <lastmod>2019-08-04</lastmod>
+    <loc>https://walkedby.com/steamfriendschecker/</loc>
+    <lastmod>2019-08-17</lastmod>
   </url>
   
   <url>
@@ -119,11 +124,6 @@
   <url>
     <loc>https://walkedby.com/vegasms14/</loc>
     <lastmod>2017-09-16</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://walkedby.com/sandbox/</loc>
-    <lastmod>2017-01-03</lastmod>
   </url>
   
   <url>
