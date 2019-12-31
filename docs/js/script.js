@@ -37,19 +37,15 @@
     return url.toLowerCase().indexOf(s) > -1
   }
 
+  if (urlcontains("file:///")) {
+    return false
+  }
+
   var local = urlcontains("//localhost:")
 
   if (!local) {
     if (!urlcontains("http://")) {
       url = url.replace("http://", "https://").replace("https://www.", "https://")
-    }
-  }
-  
-  if (urlcontains("/archives/page/")) {
-    url = url.replace(/\/page.+/, "")
-  } else {
-    if (urlcontains("/page/")) {
-      url= document.getElementsByClassName('article-title')[0].href
     }
   }
 
@@ -60,5 +56,3 @@
   console.log("戈登走過去 欢迎你 =w= ")
   console.log("本站源码： https://github.com/gordonwalkedby/WalkedbyCOM")
 })();
-
-
