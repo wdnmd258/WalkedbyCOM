@@ -36,9 +36,8 @@
       <%- partial('post/tag') %>
     </footer>
   </div>
-  <% if (!index){ %>
-    <%- partial('post/nav') %>
-  <% } %>
+  <%- partial('post/nav') %>
+  
 </article>
 
 <% if (!index && post.comments && config.disqus_shortname){ %>

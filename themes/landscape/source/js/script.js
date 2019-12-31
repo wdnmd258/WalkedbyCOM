@@ -33,15 +33,28 @@
 (function () {
   var url = location.href
 
-  if (location.host.indexOf("localhost:") < 0) {
-    if (url.toLowerCase().indexOf("http://") >= 0) {
-      location.href = url.replace("http://", "https://").replace("https://www.", "https://")
+  function urlcontains(s) {
+    return url.toLowerCase().indexOf(s) > -1
+  }
+
+  var local = urlcontains("//localhost:")
+
+  if (!local) {
+    if (!urlcontains("http://")) {
+      url = url.replace("http://", "https://").replace("https://www.", "https://")
+    }
+  }
+  
+  if (urlcontains("/archives/page/")) {
+    url = url.replace(/\/page.+/, "")
+  } else {
+    if (urlcontains("/page/")) {
+      url= document.getElementsByClassName('article-title')[0].href
     }
   }
 
-  url = location.href
-  if (url.toLowerCase().indexOf("/page/") > 0) {
-    document.getElementsByClassName('article-title')[0].click()
+  if (location.href != url) {
+    location.href = url
   }
 
   console.log("戈登走過去 欢迎你 =w= ")
