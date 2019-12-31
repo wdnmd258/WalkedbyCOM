@@ -12,8 +12,6 @@ menu:
   GitHub: https://github.com/gordonwalkedby
   Steam: https://steamcommunity.com/profiles/76561198099466387/
 
-
-
 # 友情链接
 friends:
   AceSheep: https://blog.acesheep.com/
@@ -22,9 +20,8 @@ friends:
   智弦正: https://ycwei982.com/
   Loyisa: https://loyisa.cn/
 
-
 rss: /atom.xml
-banner: "/images/banner.jpg"
+banner: "/images/banner.webp"
 
 # Content
 excerpt_link: Read More
@@ -36,7 +33,6 @@ widgets:
 - recent_posts
 - tag
 - googleadsense
-
 
 # display widgets at the bottom of index pages (pagination == 2)
 index_widgets:
