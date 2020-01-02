@@ -7,7 +7,7 @@ tags: 我的软件
 
 Greasy Fork 链接： https://greasyfork.org/zh-CN/scripts/388807-steam-friends-checker  
 Github 源码： https://github.com/gordonwalkedby/SteamFriendsChecker  
-SteamCN 帖子： https://steamcn.com/t514390-1-1  
+KeyLol 帖子： https://keylol.com/t514390-1-1  
 （是的，我是个拿 TypeScript 写网页脚本的奇葩）  
 
 # 工作原理：
