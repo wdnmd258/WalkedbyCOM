@@ -95,10 +95,10 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-dotnetframeworkingithubactions" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-icsbatch" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="dotnetframeworkingithubactions/" class="article-date">
-  <time datetime="2019-12-14T05:30:46.000Z" itemprop="datePublished">2019-12-14</time>
+    <a href="icsbatch/" class="article-date">
+  <time datetime="2020-01-04T11:31:36.000Z" itemprop="datePublished">2020-01-04</time>
 </a>
     
   </div>
@@ -109,7 +109,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="dotnetframeworkingithubactions/">使用 GitHub Actions 编译 .NET Framework 程序</a>
+      <a class="article-title" href="icsbatch/">描述性文本转 ICS 文件在线转换器</a>
     </h1>
   
 
@@ -117,12 +117,21 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>非常有意思，GitHub Actions 里自带有 Windows Server 的镜像，还预装了 Visual Studio ，可谓很爽了。<br>新建一个下面这样的 workflow 到你的项目即可在push的时候让 github 给你编译 .net framework 程序。<br>我用 &lt;&gt; 框起来的文字，记得把 &lt;&gt; 这两个符号本身给去了。路径尽量修成使用/符的，而不是\符的。<br>如果你不使用任何 nuget 包，要把关于 nuget 的那两个步骤去掉。  </p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">name:</span> <span class="string">CI</span></span><br><span class="line"></span><br><span class="line"><span class="attr">on:</span> <span class="string">[push]</span></span><br><span class="line"></span><br><span class="line"><span class="attr">jobs:</span></span><br><span class="line">  <span class="attr">build:</span></span><br><span class="line">    <span class="attr">runs-on:</span> <span class="string">windows-latest</span></span><br><span class="line">    <span class="attr">steps:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">checkout</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">actions/checkout@v1</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">setup</span> <span class="string">nuget</span> </span><br><span class="line">        <span class="attr">uses:</span> <span class="string">warrenbuckley/Setup-Nuget@v1</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">nuget</span> <span class="string">restore</span> </span><br><span class="line">        <span class="attr">working-directory:</span> <span class="string">&lt;pjPath&gt;</span>  <span class="comment">#这里写 .sln 的路径或者 packages.config 文件的路径</span></span><br><span class="line">        <span class="attr">run:</span> <span class="string">nuget.exe</span> <span class="string">restore</span> </span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">msbuild</span></span><br><span class="line">        <span class="attr">working-directory:</span> <span class="string">&lt;pjPath&gt;</span> <span class="comment">#这里写 .sln 的路径或者 .vbproj .csproj 文件的路径</span></span><br><span class="line">        <span class="attr">run:</span> <span class="string">"&amp; 'C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin/MSBuild.exe' &lt;options&gt;"</span></span><br><span class="line">        <span class="comment">#&lt;options&gt;写编译参数</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">upload</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">actions/upload-artifact@v1</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">name:</span> <span class="string">compiled_files</span></span><br><span class="line">          <span class="attr">path:</span> <span class="string">&lt;outputPath&gt;</span>  <span class="comment">#这里写编译出来的文件夹的路径，一般是  ./xx/bin/Debug 这种</span></span><br></pre></td></tr></table></figure>
-
-<p>在 Windows 上运行的 steps 都是用 PowerShell 6 来运行的。<br>如果你想使用绝对路径，Github 都是把咱们的项目放在 <code>d:\a\XXX\XXX</code> 文件夹里，XXX是你的项目名字，是的，文件夹有两层，不是分支名。<br>不要试着用命令切换工作文件夹，因为工作机制的关系，工作文件夹永远都在项目根目录，应该在 step 内使用 working-directory 参数。<br><img src="https://s2.ax1x.com/2019/12/14/QRuhSe.png" alt>  </p>
-<p>一个现成的示例 <a href="https://github.com/gordonwalkedby/OnsetPackageJsonCreater/blob/master/.github/workflows/main.yml" target="_blank" rel="noopener">https://github.com/gordonwalkedby/OnsetPackageJsonCreater/blob/master/.github/workflows/main.yml</a></p>
-
+        <p>此工具是用来把一个描述性的文本转变成 ICS 日历文件的，仅支持以今年开始一年一次的事件，用起来比较硬核，<br>最初是我为了记录好朋友的生日准备的，需要一定的正则表达式编写能力。</p>
+<div>
+在下面输入单个事件的正则匹配表达式，需要用括号括出月数字、日数字、事件名：<br>
+<input id="regexEvent" type="text" value="([0-9]+?)-([0-9]+?) (.+)" style="width: 90%;">
+<br>
+月匹配位置： $<input id="regexMonth" type="number" value="1" max="9" min="1"><br>
+日匹配位置： $<input id="regexDate" type="number" value="2" max="9" min="1"><br>
+事件名匹配位置：$<input id="regexName" type="number" value="3" max="9" min="1"><br>
+事件名添加前缀后缀，$0指的是原事件名：<input id="regexEventName" type="text" value="$0的生日" style="width: 90%;"><br>
+<input id="useLunarCalendar" type="checkbox">使用农历（农历将会创造10年的各年的独立事件，考虑到大部分日历软件不支持农历事件）<br>
+在下面输入文本： <button id="butGenerateICS" style="margin-left: 100px;" onclick="ButClicked();">点我生成 ICS 文件</button><br>
+<textarea id="inputText" style="resize: none; width: 90%;" rows="20">01-24 戈登登</textarea>
+<script src="/js/solarlunar.min.js"></script>
+<script src="/js/ics-batch.js"></script>
+</div>
       
     </div>
     <footer class="article-footer">
@@ -130,7 +139,7 @@
       
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="tags/NET/">.NET</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="tags/我的软件/">我的软件</a></li></ul>
 
     </footer>
   </div>
@@ -138,9 +147,9 @@
 <nav id="article-nav">
   
   
-    <a href="webtest/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="dotnetframeworkingithubactions/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">用来测试网络的网址收藏</div>
+      <div class="article-nav-title">使用 GitHub Actions 编译 .NET Framework 程序</div>
     </a>
   
 </nav>
@@ -164,6 +173,10 @@
       <ul>
         
           <li>
+            <a href="icsbatch/">描述性文本转 ICS 文件在线转换器</a>
+          </li>
+        
+          <li>
             <a href="dotnetframeworkingithubactions/">使用 GitHub Actions 编译 .NET Framework 程序</a>
           </li>
         
@@ -179,10 +192,6 @@
             <a href="sshwindowsproxy/">在 Windows 上给 Git SSH 设置代理</a>
           </li>
         
-          <li>
-            <a href="steamid3/">使用第三代ID 的 STEAM 个人主页链接</a>
-          </li>
-        
       </ul>
     </div>
   </div>
@@ -192,7 +201,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="tags/NET/">.NET</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="tags/我的软件/">我的软件</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="tags/日常/">日常</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="tags/科普/">科普</a><span class="tag-list-count">10</span></li><li class="tag-list-item"><a class="tag-list-link" href="tags/网站技术/">网站技术</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="tags/视频创作/">视频创作</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="tags/起源开发/">起源开发</a><span class="tag-list-count">2</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="tags/NET/">.NET</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="tags/我的软件/">我的软件</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="tags/日常/">日常</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="tags/科普/">科普</a><span class="tag-list-count">10</span></li><li class="tag-list-item"><a class="tag-list-link" href="tags/网站技术/">网站技术</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="tags/视频创作/">视频创作</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="tags/起源开发/">起源开发</a><span class="tag-list-count">2</span></li></ul>
     </div>
   </div>
 

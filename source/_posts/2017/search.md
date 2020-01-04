@@ -9,8 +9,7 @@ tags: 网站技术
     a.href = "https://cn.bing.com/search?q=" + word + "+site%3Awalkedby.com"
     a = document.getElementById('link2')
     a.href ="https://www.google.com/search?q=" + word + "+site%3Awalkedby.com"
-}
-SetSearchURL()</script>
+}</script>
 
 <br>
 <h2>
