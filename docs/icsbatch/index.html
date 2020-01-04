@@ -17,18 +17,18 @@
   
   <title>描述性文本转 ICS 文件在线转换器 | 戈登走過去的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="此工具是用来把一个描述性的文本转变成 ICS 日历文件的，仅支持以今年开始一年一次的事件，用起来比较硬核，最初是我为了记录好朋友的生日准备的，需要一定的正则表达式编写能力。  在下面输入单个事件的正则匹配表达式，需要用括号括出月数字、日数字、事件名：   月匹配位置： $ 日匹配位置： $ 事件名匹配位置：$ 事件名添加前缀后缀，$0指的是原事件名： 使用农历（农历将会创造10年的各年的独立事件，">
+  <meta name="description" content="此工具是用来把一个描述性的文本转变成 ICS 日历文件的，仅支持以今年开始一年一次的事件，用起来比较硬核，最初是我为了记录好朋友的生日准备的，需要一定的正则表达式编写能力。   本工具源码下载： Google Drive使用的农历JS库：  https://github.com/jjonline/calendar.js    在下面输入单个事件的正则匹配表达式，需要用括号括出月数字、日数字、事件名">
 <meta name="keywords" content="我的软件">
 <meta property="og:type" content="article">
 <meta property="og:title" content="描述性文本转 ICS 文件在线转换器">
 <meta property="og:url" content="https://walkedby.com/icsbatch/index.html">
 <meta property="og:site_name" content="戈登走過去的博客">
-<meta property="og:description" content="此工具是用来把一个描述性的文本转变成 ICS 日历文件的，仅支持以今年开始一年一次的事件，用起来比较硬核，最初是我为了记录好朋友的生日准备的，需要一定的正则表达式编写能力。  在下面输入单个事件的正则匹配表达式，需要用括号括出月数字、日数字、事件名：   月匹配位置： $ 日匹配位置： $ 事件名匹配位置：$ 事件名添加前缀后缀，$0指的是原事件名： 使用农历（农历将会创造10年的各年的独立事件，">
+<meta property="og:description" content="此工具是用来把一个描述性的文本转变成 ICS 日历文件的，仅支持以今年开始一年一次的事件，用起来比较硬核，最初是我为了记录好朋友的生日准备的，需要一定的正则表达式编写能力。   本工具源码下载： Google Drive使用的农历JS库：  https://github.com/jjonline/calendar.js    在下面输入单个事件的正则匹配表达式，需要用括号括出月数字、日数字、事件名">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-01-04T11:40:20.794Z">
+<meta property="og:updated_time" content="2020-01-04T11:48:29.801Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="描述性文本转 ICS 文件在线转换器">
-<meta name="twitter:description" content="此工具是用来把一个描述性的文本转变成 ICS 日历文件的，仅支持以今年开始一年一次的事件，用起来比较硬核，最初是我为了记录好朋友的生日准备的，需要一定的正则表达式编写能力。  在下面输入单个事件的正则匹配表达式，需要用括号括出月数字、日数字、事件名：   月匹配位置： $ 日匹配位置： $ 事件名匹配位置：$ 事件名添加前缀后缀，$0指的是原事件名： 使用农历（农历将会创造10年的各年的独立事件，">
+<meta name="twitter:description" content="此工具是用来把一个描述性的文本转变成 ICS 日历文件的，仅支持以今年开始一年一次的事件，用起来比较硬核，最初是我为了记录好朋友的生日准备的，需要一定的正则表达式编写能力。   本工具源码下载： Google Drive使用的农历JS库：  https://github.com/jjonline/calendar.js    在下面输入单个事件的正则匹配表达式，需要用括号括出月数字、日数字、事件名">
   
     <link rel="alternate" href="../atom.xml" title="戈登走過去的博客" type="application/atom+xml">
   
@@ -116,7 +116,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>此工具是用来把一个描述性的文本转变成 ICS 日历文件的，仅支持以今年开始一年一次的事件，用起来比较硬核，<br>最初是我为了记录好朋友的生日准备的，需要一定的正则表达式编写能力。</p>
+        <p>此工具是用来把一个描述性的文本转变成 ICS 日历文件的，仅支持以今年开始一年一次的事件，用起来比较硬核，最初是我为了记录好朋友的生日准备的，需要一定的正则表达式编写能力。  </p>
+<p>本工具源码下载： <a href="https://drive.google.com/file/d/14dlGHmpdnpsc6MK_rYtj2D-y8Wb7AXa3/view?usp=sharing" target="_blank" rel="noopener">Google Drive</a><br>使用的农历JS库：  <a href="https://github.com/jjonline/calendar.js" target="_blank" rel="noopener">https://github.com/jjonline/calendar.js</a>  </p>
 <div>
 在下面输入单个事件的正则匹配表达式，需要用括号括出月数字、日数字、事件名：<br>
 <input id="regexEvent" type="text" value="([0-9]+?)-([0-9]+?) (.+)" style="width: 90%;">
@@ -131,6 +132,7 @@
 <script src="/js/solarlunar.min.js"></script>
 <script src="/js/ics-batch.js"></script>
 </div>
+
       
     </div>
     <footer class="article-footer">

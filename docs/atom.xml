@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://walkedby.com/"/>
-  <updated>2020-01-04T11:40:20.794Z</updated>
+  <updated>2020-01-04T11:48:29.801Z</updated>
   <id>https://walkedby.com/</id>
   
   <author>
@@ -29,7 +29,8 @@
       
         
         
-          &lt;p&gt;此工具是用来把一个描述性的文本转变成 ICS
+          &lt;p&gt;此工具是用来把一个描述性的文本转变成 ICS 日历文件的，仅支持以今年开始一年一次的事件，用起来比较硬核，最初是我为了记录好朋友的生日准备的，需要一定的正则表达式编写能力。  &lt;/p&gt;
+&lt;p&gt;本工具源码下载： &lt;a
         
       
     
