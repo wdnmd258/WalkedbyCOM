@@ -1,13 +1,14 @@
 ---
-title: 給 Vegas \ Movie Studio 14 安裝 Frameserver 插件的辦法
+title: 給 Vegas \ Movie Studio 新版安裝 Frameserver 插件的辦法
 date: 2017-06-16 20:38:00
 tags: 视频创作
 ---
 
-自己研究和谷歌了半天，終于，我成功給 [VEGAS Movie Studio 14 Steam Edition](https://store.steampowered.com/app/523110/VEGAS_Movie_Studio_14_Steam_Edition/) 安裝了 [DebugMode FrameServer](https://www.debugmode.com/frameserver/) 插件。下面是我的操作辦法。
+自己研究和谷歌了半天，終于，我成功給 [VEGAS Movie Studio 14 Steam Edition](https://store.steampowered.com/app/523110/VEGAS_Movie_Studio_14_Steam_Edition/) 安裝了 [DebugMode FrameServer](https://www.debugmode.com/frameserver/) 插件。下面是我的操作辦法。  
+
+经实际测试，该办法同样适用于 15 版的 vegas。
 
 本文參考了該[ Github 帖子](https://github.com/satishsampath/frame-server/issues/17)的內容（其實內容差不多）
-
 
 ----------
 
