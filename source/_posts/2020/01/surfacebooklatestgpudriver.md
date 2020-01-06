@@ -23,7 +23,7 @@ tags: 科普
 
 # Nvidia Geforce GPU
 如果你使用 Nvidia 的 GeForce Experience 的话，直接在里面更新就是了。  
-手动更新的话，到 NVIDIA 官网下载驱动的地方，搜索型号 GeForce Notebook 940M，然后下载最新版即可。  
+手动更新的话，到 [NVIDIA 官网下载驱动的地方](https://www.geforce.cn/drivers)，搜索型号 GeForce Notebook 940M，然后下载最新版即可。  
 ![](https://s2.ax1x.com/2020/01/06/lsT7V0.png)  
 Book 的N卡虽然各方面贴近 940M 但是实际上并不是 940M，最起码显存类型就不一样。  
 其实NVIDIA给的显卡驱动都是通用的，看文件名就能看出来，我们这里下载到的只是笔记本电脑的通用N卡驱动。    
