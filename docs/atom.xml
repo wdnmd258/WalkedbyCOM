@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://walkedby.com/"/>
-  <updated>2020-01-04T11:48:29.801Z</updated>
+  <updated>2020-01-06T10:02:47.470Z</updated>
   <id>https://walkedby.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Surface Book 一代安装最新版显卡驱动的办法</title>
+    <link href="https://walkedby.com/surfacebooklatestgpudriver/"/>
+    <id>https://walkedby.com/surfacebooklatestgpudriver/</id>
+    <published>2020-01-06T08:14:45.000Z</published>
+    <updated>2020-01-06T08:14:45.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;本文讲的是微软 Surface Book 一代安装最新显卡驱动的办法，Surface Book 2 还有其他 Surface 产品的我就不清楚了。&lt;br&gt;请注意：安装最新版的显卡驱动之后，要降级是比较麻烦的，但是通常只会有好处没有坏处。  &lt;/p&gt;
+&lt;h1
+        
+      
+    
+    </summary>
+    
+    
+      <category term="科普" scheme="https://walkedby.com/tags/%E7%A7%91%E6%99%AE/"/>
+    
+  </entry>
   
   <entry>
     <title>描述性文本转 ICS 文件在线转换器</title>
@@ -477,30 +502,6 @@
         
           &lt;p&gt;现在我知道的三个机器人：  &lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://t.me/GIFDownloader_bot&quot; target=&quot;_blank&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="科普" scheme="https://walkedby.com/tags/%E7%A7%91%E6%99%AE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>GMod 传奇：《Haven》的诞生</title>
-    <link href="https://walkedby.com/GMod-Stories-The-Making-of-Haven/"/>
-    <id>https://walkedby.com/GMod-Stories-The-Making-of-Haven/</id>
-    <published>2018-02-03T11:34:06.000Z</published>
-    <updated>2018-02-03T11:34:06.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;翻译：戈登走過去&lt;br&gt;译者注：&lt;br&gt;本文的原文是刊登在 GMod 官方博客里的文章《&lt;a href=&quot;https://gmod.facepunch.com/blog/gmod-stories--the-making-of-haven/&quot; target=&quot;_blank&quot;
         
       
     
