@@ -23,10 +23,6 @@ tags: 我的软件
     <b><p id="out"></p></b>
 </form>
 
-我求求各位来算等级的朋友们，点一下网页里的谷歌广告（  
-广告并不是病毒网站，但点一下可以给我一点点收入。  
-点了广告然后关了就好） 呜呜 ;w;     
-
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
      style="display:block; text-align:center;"
