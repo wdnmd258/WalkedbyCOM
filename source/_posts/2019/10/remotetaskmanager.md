@@ -23,7 +23,7 @@ v0.5
 [更新记录](https://github.com/gordonwalkedby/remote-task-manager/releases)  
 
 # 下载链接：
-[从 GitHub 下载](https://github.com/gordonwalkedby/remote-task-manager/releases/download/v0.5/RemoteTaskManager.7z)  
+[从 GitHub 下载](https://github.com/gordonwalkedby/remote-task-manager/releases/download/v0.5/RemoteTaskManager.zip)  
 
 
 # 说明文档： 
