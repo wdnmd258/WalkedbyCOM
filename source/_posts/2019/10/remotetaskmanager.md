@@ -34,5 +34,5 @@ https://shimo.im/docs/xc9gDVw8DtcYKRvr
 https://github.com/gordonwalkedby/remote-task-manager
 
 # 软件截图：  
-![](https://s2.ax1x.com/2019/10/01/uNfb1f.png)  
+![](https://s2.ax1x.com/2020/01/07/l63kj0.png)  
 ![](https://s2.ax1x.com/2019/10/01/uNfjBQ.png)  
