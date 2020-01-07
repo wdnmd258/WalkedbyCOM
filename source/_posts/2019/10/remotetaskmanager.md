@@ -18,12 +18,12 @@ Windows 7 SP1 或以上
 甚至满足以上两个条件的功能机  
 
 # 目前最新版本： 
-v0.4  
-2019年12月27日更新   
+v0.5  
+2020年1月7日更新   
 [更新记录](https://github.com/gordonwalkedby/remote-task-manager/releases)  
 
 # 下载链接：
-[从 GitHub 下载](https://github.com/gordonwalkedby/remote-task-manager/releases/download/v0.4/RemoteTaskManager.7z)  
+[从 GitHub 下载](https://github.com/gordonwalkedby/remote-task-manager/releases/download/v0.5/RemoteTaskManager.7z)  
 
 
 # 说明文档： 
