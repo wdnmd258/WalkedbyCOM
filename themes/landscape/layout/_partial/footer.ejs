@@ -6,11 +6,11 @@
     <div id="footer-info" class="inner">
       <%= __('友情链接：') %> 
       <% for (var i in theme.friends){ %>
-        <a class="friends-nav-link" href="<%- url_for(theme.friends[i]) %>" target="_blank"><%= i %></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="friends-nav-link" href="<%- url_for(theme.friends[i]) %>" target="_blank"><%= i %></a>&nbsp;&nbsp;&nbsp;&nbsp;
       <% } %><br>
-      &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %> &nbsp;&nbsp;&nbsp;&nbsp;
       <%= __('powered_by') %> <a href="https://hexo.io/" target="_blank">Hexo</a>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= __('未经允许，禁止任何网站、媒体、个人转载我的文章。') %>
+      &nbsp;&nbsp;&nbsp;&nbsp;<%= __('未经允许，禁止任何网站、媒体、个人转载我的文章。') %>
     </div>
     
   </div>

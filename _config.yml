@@ -32,7 +32,6 @@ skip_render:
  - 'js/**'
  - 'scripts/**'
 
-
 # Writing
 new_post_name: :year/:month/:title.md  # File name of new posts
 default_layout: post
@@ -93,7 +92,6 @@ feed:
   order_by: -date
   icon: icon.png
 
-
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy: 
@@ -110,3 +108,4 @@ lazyload:
   enable: true 
   onlypost: false
   loadingImg: /images/image_loading.jpg
+
