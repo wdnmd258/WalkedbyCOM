@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://walkedby.com/about/</loc>
+    <lastmod>2016-12-31</lastmod>
+  </url>
+  
+  <url>
     <loc>https://walkedby.com/surfacebooklatestgpudriver/</loc>
     <lastmod>2020-01-06</lastmod>
   </url>
@@ -124,11 +129,6 @@
   <url>
     <loc>https://walkedby.com/search/</loc>
     <lastmod>2017-01-23</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://walkedby.com/about/</loc>
-    <lastmod>2016-12-31</lastmod>
   </url>
   
   <url>
