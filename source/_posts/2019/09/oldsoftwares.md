@@ -43,14 +43,14 @@ CSGO 全景 UI 主菜单人物模型修改器。
 # 走過去的 Steam 截图填入器 
 本软件已不适合实际使用。
 
-![](https://wx3.sinaimg.cn/mw1024/006wz0YUgy1fmygshvpo6j30ky0awq4j.jpg)
+![](https://s2.ax1x.com/2020/01/08/lgQuC9.png)
 
 已经不再提供，最后更新于：2017年12月30日   
 
 # 走過去的 Steam 文本編輯器
 帮助编写Steam社区用的一些文本的编辑器。
 
-![](https://wx3.sinaimg.cn/mw1024/006wz0YUgy1fm3jievrflj30r40eh0u5.jpg)
+![](https://s2.ax1x.com/2020/01/08/lgQQjx.png)
 
 已经不再提供，最后更新于：2017年12月30日   
 

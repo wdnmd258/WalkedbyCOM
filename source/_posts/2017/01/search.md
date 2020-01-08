@@ -1,8 +1,9 @@
 ---
 title: 搜索本站内容
 date: 2017-01-23 21:37:50
-tags: 网站技术
+tags: 网站功能
 ---
+<div>
 <script>function SetSearchURL() {
     var a = document.getElementById('link1')
     var word = document.getElementById('searchContent').value
@@ -22,3 +23,4 @@ tags: 网站技术
 目前在百度还是很难搜索到我的网站的页面的，但是搜狗可以，不过我不喜欢搜狗。  
 
 <script>SetSearchURL()</script>
+</div>

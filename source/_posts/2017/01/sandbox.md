@@ -1,18 +1,19 @@
 ---
 title: 沙盒测试页  
 date: 2017-01-04  
-tags: 网站技术
+tags: 网站功能
 ---
 这个页面只是用作沙盒测试的  
 试试博客和网页渲染的一些功能是否正常  
 
-你的浏览器UA是：  
-
+ 
+<div>
+你的浏览器UA是： 
 <script>document.write(navigator.userAgent);</script>  
-
-<br><br>
+<br>
 你的浏览器 <script>var s="支持";if(typeof(RTCPeerConnection)=="undefined"){s="不"+s;}document.write(s);</script> WebRTC。
-
+<br><br>
+</div>
 我是**粗体abc**，我是*斜体xyz*，对吗？
 
 [查看本站sitemap.xml](/sitemap.xml)
