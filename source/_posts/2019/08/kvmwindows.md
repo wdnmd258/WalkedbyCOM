@@ -1,7 +1,7 @@
 ---
 title: Linux 主机与 KVM 虚拟机内 Windows 进行 FTP 文件传输的配置说明
 date: 2019-08-14 09:29:24
-tags: 研究笔记
+tags: [研究笔记,Linux]
 ---
 我在 KVM 虚拟机里安装了 Windows 10 ，然后发现客户机与宿主机之间的文件传输还是很麻烦。  
 动不动就塞一张 ISO 给虚拟 DVD 驱动器，太麻烦了。  

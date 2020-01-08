@@ -105,3 +105,8 @@ sitemap:
   path: sitemap.xml
   template: ./sitemap_template.xml
   rel: false
+
+lazyload:
+  enable: true 
+  onlypost: false
+  loadingImg: /images/image_loading.jpg

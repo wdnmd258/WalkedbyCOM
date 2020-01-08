@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://walkedby.com/"/>
-  <updated>2020-01-06T11:09:20.273Z</updated>
+  <updated>2020-01-08T03:46:05.034Z</updated>
   <id>https://walkedby.com/</id>
   
   <author>
@@ -38,6 +38,8 @@
     
     
       <category term="研究笔记" scheme="https://walkedby.com/tags/%E7%A0%94%E7%A9%B6%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="硬件" scheme="https://walkedby.com/tags/%E7%A1%AC%E4%BB%B6/"/>
     
   </entry>
   
@@ -86,7 +88,11 @@
     </summary>
     
     
+      <category term="研究笔记" scheme="https://walkedby.com/tags/%E7%A0%94%E7%A9%B6%E7%AC%94%E8%AE%B0/"/>
+    
       <category term=".NET" scheme="https://walkedby.com/tags/NET/"/>
+    
+      <category term="Git" scheme="https://walkedby.com/tags/Git/"/>
     
   </entry>
   
@@ -136,6 +142,8 @@
     </summary>
     
     
+      <category term=".NET" scheme="https://walkedby.com/tags/NET/"/>
+    
       <category term="我的软件" scheme="https://walkedby.com/tags/%E6%88%91%E7%9A%84%E8%BD%AF%E4%BB%B6/"/>
     
   </entry>
@@ -162,6 +170,8 @@
     
       <category term="研究笔记" scheme="https://walkedby.com/tags/%E7%A0%94%E7%A9%B6%E7%AC%94%E8%AE%B0/"/>
     
+      <category term="Git" scheme="https://walkedby.com/tags/Git/"/>
+    
   </entry>
   
   <entry>
@@ -185,6 +195,8 @@
     
     
       <category term="研究笔记" scheme="https://walkedby.com/tags/%E7%A0%94%E7%A9%B6%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="Steam" scheme="https://walkedby.com/tags/Steam/"/>
     
   </entry>
   
@@ -234,6 +246,8 @@
     
     
       <category term="研究笔记" scheme="https://walkedby.com/tags/%E7%A0%94%E7%A9%B6%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="Linux" scheme="https://walkedby.com/tags/Linux/"/>
     
   </entry>
   
@@ -286,6 +300,8 @@
     
       <category term="研究笔记" scheme="https://walkedby.com/tags/%E7%A0%94%E7%A9%B6%E7%AC%94%E8%AE%B0/"/>
     
+      <category term="GTA" scheme="https://walkedby.com/tags/GTA/"/>
+    
   </entry>
   
   <entry>
@@ -311,6 +327,8 @@
     
       <category term="研究笔记" scheme="https://walkedby.com/tags/%E7%A0%94%E7%A9%B6%E7%AC%94%E8%AE%B0/"/>
     
+      <category term="Steam" scheme="https://walkedby.com/tags/Steam/"/>
+    
   </entry>
   
   <entry>
@@ -327,7 +345,7 @@
         
         
           &lt;p&gt;这篇文章讲述，怎么给 Steam 版 GMod 里的NPC使用中文的半条命2配音。&lt;br&gt;需要的是 Steam 版的半条命2，首先记得把半条命2的语言开到中文。  &lt;/p&gt;
-&lt;p&gt;&lt;img
+&lt;p&gt;&lt;img src=&quot;/images/image_loading.jpg&quot;
         
       
     
@@ -335,6 +353,8 @@
     
     
       <category term="研究笔记" scheme="https://walkedby.com/tags/%E7%A0%94%E7%A9%B6%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="起源" scheme="https://walkedby.com/tags/%E8%B5%B7%E6%BA%90/"/>
     
   </entry>
   
@@ -352,15 +372,14 @@
         
         
           &lt;p&gt;CPU-Z 是一个电脑配置信息的检测软件，关键是还支持上传到他们的云端服务器，这么好用的东西为什么不用呢。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://s2.ax1x.com/2019/02/03/kGDzan.png&quot; alt&gt;&lt;/p&gt;
-&lt;p&gt;下面我来教你怎么用
+&lt;p&gt;&lt;img src=&quot;/images/image_loading.jpg&quot;
         
       
     
     </summary>
     
     
-      <category term="研究笔记" scheme="https://walkedby.com/tags/%E7%A0%94%E7%A9%B6%E7%AC%94%E8%AE%B0/"/>
+      <category term="日常" scheme="https://walkedby.com/tags/%E6%97%A5%E5%B8%B8/"/>
     
   </entry>
   
@@ -413,6 +432,8 @@
     
       <category term="研究笔记" scheme="https://walkedby.com/tags/%E7%A0%94%E7%A9%B6%E7%AC%94%E8%AE%B0/"/>
     
+      <category term="起源" scheme="https://walkedby.com/tags/%E8%B5%B7%E6%BA%90/"/>
+    
   </entry>
   
   <entry>
@@ -435,6 +456,8 @@
     </summary>
     
     
+      <category term="研究笔记" scheme="https://walkedby.com/tags/%E7%A0%94%E7%A9%B6%E7%AC%94%E8%AE%B0/"/>
+    
       <category term=".NET" scheme="https://walkedby.com/tags/NET/"/>
     
   </entry>
@@ -452,7 +475,7 @@
       
         
         
-          &lt;p&gt;前几天我给我的steam账户换了一个邮箱：&lt;br&gt;&lt;img src=&quot;https://s1.ax1x.com/2018/08/30/PXRClD.png&quot;
+          &lt;p&gt;前几天我给我的steam账户换了一个邮箱：&lt;br&gt;&lt;img src=&quot;/images/image_loading.jpg&quot; data-original=&quot;https://s1.ax1x.com/2018/08/30/PXRClD.png&quot;
         
       
     
@@ -460,6 +483,8 @@
     
     
       <category term="日常" scheme="https://walkedby.com/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+      <category term="Steam" scheme="https://walkedby.com/tags/Steam/"/>
     
   </entry>
   
@@ -484,7 +509,7 @@
     </summary>
     
     
-      <category term="研究笔记" scheme="https://walkedby.com/tags/%E7%A0%94%E7%A9%B6%E7%AC%94%E8%AE%B0/"/>
+      <category term="日常" scheme="https://walkedby.com/tags/%E6%97%A5%E5%B8%B8/"/>
     
   </entry>
   
@@ -509,6 +534,8 @@
     
     
       <category term="研究笔记" scheme="https://walkedby.com/tags/%E7%A0%94%E7%A9%B6%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="起源" scheme="https://walkedby.com/tags/%E8%B5%B7%E6%BA%90/"/>
     
   </entry>
   

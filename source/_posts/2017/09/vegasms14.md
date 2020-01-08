@@ -1,7 +1,7 @@
 ---
 title: Movie Studio 14 Platinum 不 Platinum 的区别在哪里
 date: 2017-09-17 07:50:16
-tags: 研究笔记
+tags: [研究笔记,视频创作]
 ---
 今天早上忍疼花160買了 [VEGAS Movie Studio 14 Platinum Steam Edition](https://store.steampowered.com/app/523120/VEGAS_Movie_Studio_14_Platinum_Steam_Edition/) ，超心疼的。  
 VEGAS Movie Studio 14 Platinum Steam Edition 原價：325元  

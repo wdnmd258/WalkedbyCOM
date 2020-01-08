@@ -18,19 +18,19 @@
   <title>使用 GitHub Actions 编译 .NET Framework 程序 | 戈登走過去的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="非常有意思，GitHub Actions 里自带有 Windows Server 的镜像，还预装了 Visual Studio ，可谓很爽了。新建一个下面这样的 workflow 到你的项目即可在push的时候让 github 给你编译 .net framework 程序。我用 &amp;lt;&amp;gt; 框起来的文字，记得把 &amp;lt;&amp;gt; 这两个符号本身给去了。路径尽量修成使用/符的，而不是\符的。如">
-<meta name="keywords" content=".NET">
+<meta name="keywords" content="研究笔记,.NET,Git">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用 GitHub Actions 编译 .NET Framework 程序">
 <meta property="og:url" content="https://walkedby.com/dotnetframeworkingithubactions/index.html">
 <meta property="og:site_name" content="戈登走過去的博客">
 <meta property="og:description" content="非常有意思，GitHub Actions 里自带有 Windows Server 的镜像，还预装了 Visual Studio ，可谓很爽了。新建一个下面这样的 workflow 到你的项目即可在push的时候让 github 给你编译 .net framework 程序。我用 &amp;lt;&amp;gt; 框起来的文字，记得把 &amp;lt;&amp;gt; 这两个符号本身给去了。路径尽量修成使用/符的，而不是\符的。如">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://s2.ax1x.com/2019/12/14/QRuhSe.png">
-<meta property="og:updated_time" content="2019-12-29T13:16:35.983Z">
+<meta property="og:image" content="https://walkedby.com/images/image_loading.jpg">
+<meta property="og:updated_time" content="2020-01-08T03:45:51.583Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用 GitHub Actions 编译 .NET Framework 程序">
 <meta name="twitter:description" content="非常有意思，GitHub Actions 里自带有 Windows Server 的镜像，还预装了 Visual Studio ，可谓很爽了。新建一个下面这样的 workflow 到你的项目即可在push的时候让 github 给你编译 .net framework 程序。我用 &amp;lt;&amp;gt; 框起来的文字，记得把 &amp;lt;&amp;gt; 这两个符号本身给去了。路径尽量修成使用/符的，而不是\符的。如">
-<meta name="twitter:image" content="https://s2.ax1x.com/2019/12/14/QRuhSe.png">
+<meta name="twitter:image" content="https://walkedby.com/images/image_loading.jpg">
   
     <link rel="alternate" href="../atom.xml" title="戈登走過去的博客" type="application/atom+xml">
   
@@ -121,7 +121,7 @@
         <p>非常有意思，GitHub Actions 里自带有 Windows Server 的镜像，还预装了 Visual Studio ，可谓很爽了。<br>新建一个下面这样的 workflow 到你的项目即可在push的时候让 github 给你编译 .net framework 程序。<br>我用 &lt;&gt; 框起来的文字，记得把 &lt;&gt; 这两个符号本身给去了。路径尽量修成使用/符的，而不是\符的。<br>如果你不使用任何 nuget 包，要把关于 nuget 的那两个步骤去掉。  </p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">name:</span> <span class="string">CI</span></span><br><span class="line"></span><br><span class="line"><span class="attr">on:</span> <span class="string">[push]</span></span><br><span class="line"></span><br><span class="line"><span class="attr">jobs:</span></span><br><span class="line">  <span class="attr">build:</span></span><br><span class="line">    <span class="attr">runs-on:</span> <span class="string">windows-latest</span></span><br><span class="line">    <span class="attr">steps:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">checkout</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">actions/checkout@v1</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">setup</span> <span class="string">nuget</span> </span><br><span class="line">        <span class="attr">uses:</span> <span class="string">warrenbuckley/Setup-Nuget@v1</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">nuget</span> <span class="string">restore</span> </span><br><span class="line">        <span class="attr">working-directory:</span> <span class="string">&lt;pjPath&gt;</span>  <span class="comment">#这里写 .sln 的路径或者 packages.config 文件的路径</span></span><br><span class="line">        <span class="attr">run:</span> <span class="string">nuget.exe</span> <span class="string">restore</span> </span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">msbuild</span></span><br><span class="line">        <span class="attr">working-directory:</span> <span class="string">&lt;pjPath&gt;</span> <span class="comment">#这里写 .sln 的路径或者 .vbproj .csproj 文件的路径</span></span><br><span class="line">        <span class="attr">run:</span> <span class="string">"&amp; 'C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin/MSBuild.exe' &lt;options&gt;"</span></span><br><span class="line">        <span class="comment">#&lt;options&gt;写编译参数</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">upload</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">actions/upload-artifact@v1</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">name:</span> <span class="string">compiled_files</span></span><br><span class="line">          <span class="attr">path:</span> <span class="string">&lt;outputPath&gt;</span>  <span class="comment">#这里写编译出来的文件夹的路径，一般是  ./xx/bin/Debug 这种</span></span><br></pre></td></tr></table></figure>
 
-<p>在 Windows 上运行的 steps 都是用 PowerShell 6 来运行的。<br>如果你想使用绝对路径，Github 都是把咱们的项目放在 <code>d:\a\XXX\XXX</code> 文件夹里，XXX是你的项目名字，是的，文件夹有两层，不是分支名。<br>不要试着用命令切换工作文件夹，因为工作机制的关系，工作文件夹永远都在项目根目录，应该在 step 内使用 working-directory 参数。<br><img src="https://s2.ax1x.com/2019/12/14/QRuhSe.png" alt>  </p>
+<p>在 Windows 上运行的 steps 都是用 PowerShell 6 来运行的。<br>如果你想使用绝对路径，Github 都是把咱们的项目放在 <code>d:\a\XXX\XXX</code> 文件夹里，XXX是你的项目名字，是的，文件夹有两层，不是分支名。<br>不要试着用命令切换工作文件夹，因为工作机制的关系，工作文件夹永远都在项目根目录，应该在 step 内使用 working-directory 参数。<br><img src="/images/image_loading.jpg" data-original="https://s2.ax1x.com/2019/12/14/QRuhSe.png" alt>  </p>
 <p>一个现成的示例 <a href="https://github.com/gordonwalkedby/OnsetPackageJsonCreater/blob/master/.github/workflows/main.yml" target="_blank" rel="noopener">https://github.com/gordonwalkedby/OnsetPackageJsonCreater/blob/master/.github/workflows/main.yml</a></p>
 
       
@@ -131,7 +131,7 @@
       
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../tags/NET/">.NET</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../tags/NET/">.NET</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../tags/Git/">Git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../tags/研究笔记/">研究笔记</a></li></ul>
 
     </footer>
   </div>
@@ -196,9 +196,10 @@
   
     
   <div class="widget-wrap">
+    
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="../tags/NET/">.NET</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="../tags/我的软件/">我的软件</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="../tags/日常/">日常</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="../tags/研究笔记/">研究笔记</a><span class="tag-list-count">15</span></li><li class="tag-list-item"><a class="tag-list-link" href="../tags/网站功能/">网站功能</a><span class="tag-list-count">2</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="../tags/NET/">.NET</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="../tags/GTA/">GTA</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="../tags/Git/">Git</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="../tags/Linux/">Linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="../tags/Steam/">Steam</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="../tags/我的软件/">我的软件</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="../tags/日常/">日常</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="../tags/研究笔记/">研究笔记</a><span class="tag-list-count">15</span></li><li class="tag-list-item"><a class="tag-list-link" href="../tags/硬件/">硬件</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="../tags/网站功能/">网站功能</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="../tags/视频创作/">视频创作</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="../tags/起源/">起源</a><span class="tag-list-count">3</span></li></ul>
     </div>
   </div>
 
@@ -276,5 +277,5 @@
 
 
   </div>
-</body>
+<script>!function(e){var c=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){for(var r=0;r<c.length;r++)t=c[r],0<=(n=t.getBoundingClientRect()).top&&0<=n.left&&n.top<=(e.innerHeight||document.documentElement.clientHeight)&&function(){var t,n,e,i,o=c[r];t=o,n=function(){c=c.filter(function(t){return o!==t})},e=new Image,i=t.getAttribute("data-original"),e.onload=function(){t.src=i,n&&n()},e.src=i}();var t,n}i(),e.addEventListener("scroll",function(){var t,n;t=i,n=e,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(n)},500)})}(this);</script></body>
 </html>
