@@ -95,10 +95,10 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-surfacebooklatestgpudriver" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-phone" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="surfacebooklatestgpudriver/" class="article-date">
-  <time datetime="2020-01-06T08:14:45.000Z" itemprop="datePublished">2020-01-06</time>
+    <a href="phone/" class="article-date">
+  <time datetime="2020-01-08T12:12:01.000Z" itemprop="datePublished">2020-01-08</time>
 </a>
     
   </div>
@@ -109,7 +109,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="surfacebooklatestgpudriver/">Surface Book 一代安装最新版显卡驱动的办法</a>
+      <a class="article-title" href="phone/">电话流量套餐筛选排列工具</a>
     </h1>
   
 
@@ -117,10 +117,31 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>本文讲的是微软 Surface Book 一代安装最新显卡驱动的办法，Surface Book 2 还有其他 Surface 产品的我就不清楚了。<br>请注意：安装最新版的显卡驱动之后，要降级是比较麻烦的，但是通常只会有好处没有坏处。  </p>
-<h1 id="Intel-HD-Graphics-520"><a href="#Intel-HD-Graphics-520" class="headerlink" title="Intel HD Graphics 520"></a>Intel HD Graphics 520</h1><p>这个是 Book 必备的核显，你要是把键盘丢了，N卡独显就可以不要了x<br>先去 <a href="https://downloadcenter.intel.com/product/80939/Graphics-Drivers" target="_blank" rel="noopener">INTEL 官网的下载中心的显卡驱动下载页面</a>，找到 Windows 10 的 DCH 驱动。<a href="https://www.zhihu.com/question/311670069/answer/734734237" target="_blank" rel="noopener">什么是 DCH 驱动？</a><br><img src="/images/image_loading.jpg" data-original="https://s2.ax1x.com/2020/01/06/ls6M1f.png" alt><br>进去页面之后看左边，下载 .zip 文件，不要下载 .exe 驱动安装包，那个是安装不了的。<br><img src="/images/image_loading.jpg" data-original="https://s2.ax1x.com/2020/01/06/ls63ng.png" alt><br>下载好之后解压到一个文件夹里，打开系统的设备管理器，找到 Intel 核显然后打开 属性-驱动-更新驱动-从本地文件里选择  </p>
-<p><img src="/images/image_loading.jpg" data-original="https://s2.ax1x.com/2020/01/06/lsclP1.png" alt><br>然后选择我们之前解压到的那个文件夹，直接安装即可，安装是需要几分钟时间的，安装好之后就可以在开始菜单的程序列表里找到新增的 Intel 显卡控制面板了。<br>日后的更新，我也不知道能不能更新，应该控制面板里是可以更新的，反正这个玩意没必要更新太勤快。毕竟给 Surface 重装系统可没给普通电脑重装那么容易。<br><img src="/images/image_loading.jpg" data-original="https://s2.ax1x.com/2020/01/06/lsgQeg.png" alt><br><img src="/images/image_loading.jpg" data-original="https://s2.ax1x.com/2020/01/06/lsggl6.png" alt><br>在 Intel 显卡控制面板里面是可以自定义分辨率的，你可以给自己开个 1500x1000，那样就是100% DPI了，但是肉眼看起来还是很不舒服就是了。</p>
-<h1 id="Nvidia-Geforce-GPU"><a href="#Nvidia-Geforce-GPU" class="headerlink" title="Nvidia Geforce GPU"></a>Nvidia Geforce GPU</h1><p>如果你使用 Nvidia 的 GeForce Experience 的话，直接在里面更新就是了。<br>手动更新的话，到 <a href="https://www.geforce.cn/drivers" target="_blank" rel="noopener">NVIDIA 官网下载驱动的地方</a>，搜索型号 GeForce Notebook 940M，然后下载最新版即可。<br><img src="/images/image_loading.jpg" data-original="https://s2.ax1x.com/2020/01/06/lsT7V0.png" alt><br>Book 的N卡虽然各方面贴近 940M 但是实际上并不是 940M，最起码显存类型就不一样。<br>其实NVIDIA给的显卡驱动都是通用的，看文件名就能看出来，我们这里下载到的只是笔记本电脑的通用N卡驱动。<br><img src="/images/image_loading.jpg" data-original="https://s2.ax1x.com/2020/01/06/ls7PIK.png" alt><br>这里安装的也是 DCH 驱动，安装好之后也会在开始菜单程序列表里多一个 NVIDIA 显卡控制面板（可能需要一点时间之后才会出现），这个新的控制面板会替换掉老的桌面右键打开的那个。  </p>
+        <p>这个工具是为了根据电话的使用情况去选出最适合的电话套餐用的。<br>这些套餐数据都是自己从各大网站搜集来的，没有直接采用他人整理的数据大全（其实是懒得去问授权）。<br>只收录了一些互联网套餐，地区套餐、校园套餐、物联网套餐等都没收录，不好查有哪些，数量也不少。<br>我没有收某运营商或商家的钱，这是免费开源程序。    </p>
+<div>
+    每个月，你都需要：（没有请写0）<br>
+    打电话：<input id="talkCount" type="number" value="10">分钟，<br>
+    发短信：<input id="textCount" type="number" value="1">条，<br>
+    使用流量：<input id="dataCount" type="number" value="1.5">GB，<br>
+    一个月中，要用流量的日子有：<input id="useDataDays" type="number" value="30">天（最多30天）。<br><br>
+    你的手机支持的运营商：
+    <input id="check1" type="checkbox" checked="checked">中国电信
+    <input id="check2" type="checkbox" checked="checked">中国移动
+    <input id="check3" type="checkbox" checked="checked">中国联通
+    <br><br>
+    <input id="checkVirtual" type="checkbox" checked="checked">可以是虚拟运营商<br>
+    <input id="checkFreeDataApps" type="checkbox">只看有免流APP的<br>
+    <input id="checkExpensive" type="checkbox">先看贵的，不看便宜的<br>
+    <br>
+    <button onclick="SortUsersPlan();DisplayPlans(5);">选出5个最优套餐</button> 
+    <button onclick="SortUsersPlan();DisplayPlans(99999);">列出全部套餐</button><br>
+    <span id="planscount"></span>
+    <br><br>
+    <div id="displayplans"></div>
+    <script src="/js/chooseyourphoneplan.js"></script>
+</div>
+
+<p><a href="https://github.com/gordonwalkedby/ChooseYourPhonePlan" target="_blank" rel="noopener">本工具的源码</a><br><a href="https://github.com/gordonwalkedby/ChooseYourPhonePlan/issues" target="_blank" rel="noopener">如果有错误或者有新套餐或者某个套餐不卖了，可以发个issue告诉我</a><br><a href="https://walkedby.com/donateme/">请我喝可乐</a></p>
 
       
     </div>
@@ -129,7 +150,7 @@
       
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="tags/研究笔记/">研究笔记</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="tags/硬件/">硬件</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="tags/我的软件/">我的软件</a></li></ul>
 
     </footer>
   </div>
@@ -137,9 +158,9 @@
 <nav id="article-nav">
   
   
-    <a href="icsbatch/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="surfacebooklatestgpudriver/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">描述性文本转 ICS 文件在线转换器</div>
+      <div class="article-nav-title">Surface Book 一代安装最新版显卡驱动的办法</div>
     </a>
   
 </nav>
@@ -163,6 +184,10 @@
       <ul>
         
           <li>
+            <a href="phone/">电话流量套餐筛选排列工具</a>
+          </li>
+        
+          <li>
             <a href="surfacebooklatestgpudriver/">Surface Book 一代安装最新版显卡驱动的办法</a>
           </li>
         
@@ -178,10 +203,6 @@
             <a href="webtest/">用来测试网络的网址收藏</a>
           </li>
         
-          <li>
-            <a href="remotetaskmanager/">手机任务管理器</a>
-          </li>
-        
       </ul>
     </div>
   </div>
@@ -192,7 +213,7 @@
     
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="tags/NET/">.NET</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="tags/GTA/">GTA</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="tags/Git/">Git</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="tags/Linux/">Linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="tags/Steam/">Steam</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="tags/我的软件/">我的软件</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="tags/日常/">日常</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="tags/研究笔记/">研究笔记</a><span class="tag-list-count">15</span></li><li class="tag-list-item"><a class="tag-list-link" href="tags/硬件/">硬件</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="tags/网站功能/">网站功能</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="tags/视频创作/">视频创作</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="tags/起源/">起源</a><span class="tag-list-count">3</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="tags/NET/">.NET</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="tags/GTA/">GTA</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="tags/Git/">Git</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="tags/Linux/">Linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="tags/Steam/">Steam</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="tags/我的软件/">我的软件</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="tags/日常/">日常</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="tags/研究笔记/">研究笔记</a><span class="tag-list-count">15</span></li><li class="tag-list-item"><a class="tag-list-link" href="tags/硬件/">硬件</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="tags/网站功能/">网站功能</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="tags/视频创作/">视频创作</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="tags/起源/">起源</a><span class="tag-list-count">3</span></li></ul>
     </div>
   </div>
 
