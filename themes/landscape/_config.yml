@@ -32,7 +32,6 @@ sidebar: right
 widgets:
 - recent_posts
 - tag
-- googleadsense
 
 # display widgets at the bottom of index pages (pagination == 2)
 index_widgets:
