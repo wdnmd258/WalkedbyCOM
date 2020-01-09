@@ -10,6 +10,8 @@ tags: 网站功能
     a.href = "https://cn.bing.com/search?q=" + word + "+site%3Awalkedby.com"
     a = document.getElementById('link2')
     a.href ="https://www.google.com/search?q=" + word + "+site%3Awalkedby.com"
+     a = document.getElementById('link3')
+    a.href ="https://duckduckgo.com/?q=" + word + "+site%3Awalkedby.com"
 }</script>
 
 <br>
@@ -19,6 +21,8 @@ tags: 网站功能
 <a id='link1' target='_blank'>国内搜索（必应）</a>
 <br>
 <a id='link2' target='_blank'>国外搜索（谷歌）</a>
+<br>
+<a id='link3' target='_blank'>国外搜索（DuckDuckGo）</a>
 </h2>
 目前在百度还是很难搜索到我的网站的页面的，但是搜狗可以，不过我不喜欢搜狗。  
 

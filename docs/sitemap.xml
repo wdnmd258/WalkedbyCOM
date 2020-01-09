@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://walkedby.com/search/</loc>
+    <lastmod>2017-01-23</lastmod>
+  </url>
+  
+  <url>
     <loc>https://walkedby.com/whenlv6/</loc>
     <lastmod>2019-08-11</lastmod>
   </url>
@@ -129,11 +134,6 @@
   <url>
     <loc>https://walkedby.com/sandbox/</loc>
     <lastmod>2017-01-03</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://walkedby.com/search/</loc>
-    <lastmod>2017-01-23</lastmod>
   </url>
   
   <url>
