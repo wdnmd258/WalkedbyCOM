@@ -6,7 +6,7 @@ tags: [我的软件]
 这个工具是为了根据电话的使用情况去选出最适合的电话套餐用的。  
 这些套餐数据都是自己从各大网站搜集来的，没有直接采用他人整理的数据大全（其实是懒得去问授权）。  
 只收录了一些互联网套餐，地区套餐、校园套餐、物联网套餐等都没收录，不好查有哪些，数量也不少。  
-这是免费开源程序，如果你喜欢用这个工具，可以[赞助](https://walkedby.com/donateme/)我一下w。      
+这是免费开源程序，源码见页面下方。      
 绝大多数套餐都会对大量使用流量进行限速，所以计算大流量时不一定便宜的就是最好的，任何的购卡行为之前都应该做好充足的查询与检查，确定卡就是自己想要的那种卡。  
 
 <div>
@@ -35,4 +35,3 @@ tags: [我的软件]
 
 [本工具的源码](https://github.com/gordonwalkedby/ChooseYourPhonePlan)  
 [如果有错误或者有新套餐或者某个套餐不卖了，可以发个issue告诉我](https://github.com/gordonwalkedby/ChooseYourPhonePlan/issues)  
-[请我喝可乐](https://walkedby.com/donateme/)  
