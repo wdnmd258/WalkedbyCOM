@@ -13,7 +13,7 @@ tags: [我的软件]
     每个月，你都需要：（没有请写0，一切输入都最大为9999，最小为0）<br>
     打电话：<input id="talkCount" type="number" value="10">分钟，<br>
     发短信：<input id="textCount" type="number" value="1">条，<br>
-    使用流量：<input id="dataCount" type="number" value="1.5">GB，<br>
+    使用流量：<input id="dataCount" type="number" value="3">GB，<br>
     一个月中，要用流量的日子有：<input id="useDataDays" type="number" value="30">天（最多30天）。<br><br>
     你的手机支持的运营商：
     <input id="check1" type="checkbox" checked="checked">中国电信
@@ -24,10 +24,11 @@ tags: [我的软件]
     <input id="checkFreeDataApps" type="checkbox">只看有免流APP的<br>
     <input id="checkShowNotOnSell" type="checkbox">列出已经无法新办的卡<br>
     <input id="checkExpensive" type="checkbox">先看贵的，不看便宜的<br>
-    <br>
+    包含关键词：<input id="txtSearch" type="text">（关键词只能有一个，越精简越好，比如“腾讯”、“百度”）
+    <br><br>
     <button onclick="SortUsersPlan();DisplayPlans(10);">选出10个最优套餐</button>
     <button onclick="SortUsersPlan();DisplayPlans(99999);">列出全部套餐</button><br>
-    <span id="planscount"></span>
+    <span id="topinfo"></span>
     <br><br>
     <div id="displayplans"></div>
     <script src="/js/chooseyourphoneplan.min.js"></script>
@@ -35,3 +36,4 @@ tags: [我的软件]
 
 [本工具的源码](https://github.com/gordonwalkedby/ChooseYourPhonePlan)  
 [如果有错误或者有新套餐或者某个套餐不卖了，可以发个issue告诉我](https://github.com/gordonwalkedby/ChooseYourPhonePlan/issues)  
+
