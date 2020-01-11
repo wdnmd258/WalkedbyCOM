@@ -16,8 +16,11 @@ tags: 网站功能
 </div>
 我是**粗体abc**，我是*斜体xyz*，对吗？
 
-[查看本站sitemap.xml](/sitemap.xml)
-[测试 http://www.](http://www.walkedby.com/)
+- [查看本站sitemap.xml](/sitemap.xml)   
+- [测试 http://www.](http://www.walkedby.com/)  
+- [Vegas 脚本开发FAQ镜像](/other/VEGASScriptFAQ.html)   
+- [Vegas 脚本开发API镜像](/other/VEGASScriptAPI.html) 
+
 
 H1-H6:  
 
