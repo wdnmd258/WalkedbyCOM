@@ -114,9 +114,9 @@
     
       <category term="研究笔记" scheme="https://walkedby.com/tags/%E7%A0%94%E7%A9%B6%E7%AC%94%E8%AE%B0/"/>
     
-      <category term=".NET" scheme="https://walkedby.com/tags/NET/"/>
-    
       <category term="Git" scheme="https://walkedby.com/tags/Git/"/>
+    
+      <category term=".NET" scheme="https://walkedby.com/tags/NET/"/>
     
   </entry>
   
@@ -166,9 +166,9 @@
     </summary>
     
     
-      <category term=".NET" scheme="https://walkedby.com/tags/NET/"/>
-    
       <category term="我的软件" scheme="https://walkedby.com/tags/%E6%88%91%E7%9A%84%E8%BD%AF%E4%BB%B6/"/>
+    
+      <category term=".NET" scheme="https://walkedby.com/tags/NET/"/>
     
   </entry>
   
