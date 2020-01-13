@@ -4,7 +4,7 @@ date: 2020-01-06 16:14:45
 tags: [研究笔记,硬件]
 ---
 本文讲的是微软 Surface Book 一代安装最新显卡驱动的办法，Surface Book 2 还有其他 Surface 产品的我就不清楚了。  
-请注意：安装最新版的显卡驱动之后，要降级是比较麻烦的，但是通常只会有好处没有坏处。  
+请注意：安装最新版的显卡驱动之后，要降级是比较麻烦的。  
 
 # Intel HD Graphics 520
 这个是 Book 必备的核显，你要是把键盘丢了，N卡独显就可以不要了x  
@@ -21,7 +21,10 @@ tags: [研究笔记,硬件]
 ![](https://s2.ax1x.com/2020/01/06/lsggl6.png)  
 在 Intel 显卡控制面板里面是可以自定义分辨率的，你可以给自己开个 1500x1000，那样就是100% DPI了，但是肉眼看起来还是很不舒服就是了。
 
-# Nvidia Geforce GPU
+# Nvidia Geforce GPU 
+**注意，安装了新版的驱动之后，拔下屏幕再重新插入，N卡不会正常工作。需要到设备管理器里禁用N卡，再重新启用N卡才行。  
+所以不是特别推荐更新。**  
+
 如果你使用 Nvidia 的 GeForce Experience 的话，直接在里面更新就是了。  
 手动更新的话，到 [NVIDIA 官网下载驱动的地方](https://www.geforce.cn/drivers)，搜索型号 GeForce Notebook 940M，然后下载最新版即可。  
 ![](https://s2.ax1x.com/2020/01/06/lsT7V0.png)  
