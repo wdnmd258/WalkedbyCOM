@@ -17,10 +17,10 @@ tags: [研究笔记,Git]
    这里 git 的安装路径和后面的代理自己看着填，不要试着用相对路径，保证要吃亏。因为 `Program Files` 文件夹中间带一个空格，所以这里需要把整个路径给引号引起来。  后面的代理的话，`-S` 指是 socks 代理，默认是 socks5，后面的 `%h %p` 意思是 Host 和 Port，必须得写上，我也不知道为什么要这么设计。  如果要使用 HTTP 代理，就写 `-H`，更多代理类型（比如 socks4）请参[这个](https://bitbucket.org/gotoh/connect/wiki/Home#!more-detail)。     
    以上这个写法是针对全局的，如果想只针对某个网站的话，就这么写：
 ```
-Host github.com     
+Host github.com
   ProxyCommand "C:\Program Files\Git\mingw64\bin\connect.exe" -S 127.0.0.1:1080 %h %p
 
-Host gitlab.com     
+Host gitlab.com
   ProxyCommand "C:\Program Files\Git\mingw64\bin\connect.exe" -S 127.0.0.1:1080 %h %p
 ```
 1. 接下来可以先初步尝试一下，找个地方随便 clone 个仓库试试。比如 `git clone git@github.com:nodejs/node.git`，nodejs 的官方库，clone过来有800MB+，作为速度测试还是蛮可以的。
