@@ -5,7 +5,7 @@ tags: [研究笔记,起源]
 ---
 翻译：戈登走過去  
 译者注：  
-本文的原文是刊登在 GMod 官方博客里的文章《[GMod Stories: The Making of Haven](https://gmod.facepunch.com/blog/gmod-stories--the-making-of-haven/)》，[授权进行转载和翻译](https://twitter.com/GordonWalkedby/status/959623077775605760)。  
+本文的原文是刊登在 GMod 官方博客里的文章《[GMod Stories: The Making of Haven](https://gmod.facepunch.com/blog/gmod-stories--the-making-of-ha)》，[授权进行转载和翻译](https://twitter.com/GordonWalkedby/status/959623077775605760)。  
 本文原作者是 Craig Pearson，一位 Facepunch 成员。  
 原文发布于 2 February 2018 。  
 转载此文请遵守 [CC BY-NC-ND 4.0协议](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh)，完整转载并标注本页面的链接。  
