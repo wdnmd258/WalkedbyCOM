@@ -32,9 +32,7 @@
 <meta property="og:image" content="https://walkedby.com/images/image_loading.jpg">
 <meta property="og:image" content="https://walkedby.com/images/image_loading.jpg">
 <meta property="og:image" content="https://walkedby.com/images/image_loading.jpg">
-<meta property="og:image" content="https://walkedby.com/images/image_loading.jpg">
-<meta property="og:image" content="https://walkedby.com/images/image_loading.jpg">
-<meta property="og:updated_time" content="2020-01-08T03:42:49.474Z">
+<meta property="og:updated_time" content="2020-01-30T00:46:30.019Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="给 Vegas \ Movie Studio 新版安裝 Frameserver 插件的办法">
 <meta name="twitter:description" content="自己研究和谷歌了半天，終于，我成功給 VEGAS Movie Studio 14 Steam Edition 安裝了 DebugMode FrameServer 插件。下面是我的操作辦法。   经实际测试，该办法同样适用于 15 版的 vegas。 本文參考了該 Github 帖子的內容（其實內容差不多）  第一步，下載2.15版本的 DebugMode FrameServer 插件，也可以點我直">
@@ -132,22 +130,19 @@
 <hr>
 <p>第二步，安裝，請按照下面的圖片操作噢。</p>
 <p><img src="/images/image_loading.jpg" data-original="https://ooo.0o0.ooo/2017/06/16/5943d2f9e32d5.png" alt></p>
-<p>一定要記得勾選這個Vegas64</p>
-<p><img src="/images/image_loading.jpg" data-original="https://ooo.0o0.ooo/2017/06/16/5943d2f9e3748.png" alt></p>
-<p><img src="/images/image_loading.jpg" data-original="https://ooo.0o0.ooo/2017/06/16/5943d2f9e3517.png" alt></p>
-<p>兩個位置，分別是插件本體一個是Vegas的位置，為了方便等會操作，這裡直接安裝在一起。</p>
+<p>一定要記得勾選這個Vegas64<br>安装的路径选默认即可，第二个路径是 vegas 的路径，但是实际上不用管，随便选一个桌面即可。  </p>
 <hr>
 <p>第三步，新建一個文件夾。</p>
-<p>在 <em>steamapps\common\Movie Studio 14.0\Movie Studio 14.0\FileIO Plug-Ins</em> 文件夾</p>
-<p>底下新建一個文件夾並命名為 <em>fsplug</em> 。</p>
+<p>在 vegas目录 的 FileIO Plug-Ins* 文件夾下</p>
+<p>新建一個文件夾並命名為 <em>fsplug</em> 。</p>
 <hr>
 <p>第四步，複製文件。</p>
 <p>把 <em>C:\Program Files (x86)\DebugMode\FrameServer</em> 文件夾</p>
 <p>裡的 <em>dfscVegasV264Out.dll</em> 文件</p>
-<p>複製到 <em>steamapps\common\Movie Studio 14.0\Movie Studio 14.0\FileIO Plug-Ins\fsplug</em> 文件夾內。</p>
+<p>複製到 <em>FileIO Plug-Ins\fsplug</em> 文件夾內。</p>
 <p><img src="/images/image_loading.jpg" data-original="https://ooo.0o0.ooo/2017/06/16/5943d4c0b20b5.png" alt></p>
 <hr>
-<p>第五步，在 <em>steamapps\common\Movie Studio 14.0\Movie Studio 14.0</em> 文件夾</p>
+<p>第五步，在 vegas 安装文件夹</p>
 <p>裡找到 <em>Release-x64.fio2007-config</em> 文件。</p>
 <p>並用記事本或其他文本編輯軟體打開。</p>
 <p>在裡面加上一行話：</p>

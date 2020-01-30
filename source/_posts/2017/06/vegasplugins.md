@@ -22,21 +22,17 @@ tags: [研究笔记,视频创作]
 
 ![](https://ooo.0o0.ooo/2017/06/16/5943d2f9e32d5.png)
 
-一定要記得勾選這個Vegas64
+一定要記得勾選這個Vegas64   
+安装的路径选默认即可，第二个路径是 vegas 的路径，但是实际上不用管，随便选一个桌面即可。  
 
-![](https://ooo.0o0.ooo/2017/06/16/5943d2f9e3748.png)
-
-![](https://ooo.0o0.ooo/2017/06/16/5943d2f9e3517.png)
-
-兩個位置，分別是插件本體一個是Vegas的位置，為了方便等會操作，這裡直接安裝在一起。
 
 ----------
 
 第三步，新建一個文件夾。
 
-在 *steamapps\common\Movie Studio 14.0\Movie Studio 14.0\FileIO Plug-Ins* 文件夾
+在 vegas目录 的 FileIO Plug-Ins* 文件夾下
 
-底下新建一個文件夾並命名為 *fsplug* 。
+新建一個文件夾並命名為 *fsplug* 。
 
 ----------
 
@@ -46,7 +42,7 @@ tags: [研究笔记,视频创作]
 
 裡的 *dfscVegasV264Out.dll* 文件
 
-複製到 *steamapps\common\Movie Studio 14.0\Movie Studio 14.0\FileIO Plug-Ins\fsplug* 文件夾內。
+複製到 *FileIO Plug-Ins\fsplug* 文件夾內。
 
 ![](https://ooo.0o0.ooo/2017/06/16/5943d4c0b20b5.png)
 
@@ -54,7 +50,7 @@ tags: [研究笔记,视频创作]
 
 ----------
 
-第五步，在 *steamapps\common\Movie Studio 14.0\Movie Studio 14.0* 文件夾
+第五步，在 vegas 安装文件夹
 
 裡找到 *Release-x64.fio2007-config* 文件。
 
