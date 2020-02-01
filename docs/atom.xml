@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://walkedby.com/"/>
-  <updated>2020-01-21T07:58:51.599Z</updated>
+  <updated>2020-02-01T00:15:22.415Z</updated>
   <id>https://walkedby.com/</id>
   
   <author>
@@ -37,6 +37,8 @@
     
     
       <category term="日常" scheme="https://walkedby.com/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+      <category term="转载" scheme="https://walkedby.com/tags/%E8%BD%AC%E8%BD%BD/"/>
     
   </entry>
   
