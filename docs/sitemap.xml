@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://walkedby.com/phone/</loc>
-    <lastmod>2020-01-08</lastmod>
+    <loc>https://walkedby.com/whenlv6/</loc>
+    <lastmod>2019-08-11</lastmod>
   </url>
   
   <url>
-    <loc>https://walkedby.com/whenlv6/</loc>
-    <lastmod>2019-08-11</lastmod>
+    <loc>https://walkedby.com/phone/</loc>
+    <lastmod>2020-01-08</lastmod>
   </url>
   
   <url>
@@ -42,13 +42,13 @@
   </url>
   
   <url>
-    <loc>https://walkedby.com/gtaivsavedgames/</loc>
-    <lastmod>2019-08-05</lastmod>
+    <loc>https://walkedby.com/gmodchinesevoice/</loc>
+    <lastmod>2019-03-01</lastmod>
   </url>
   
   <url>
-    <loc>https://walkedby.com/gmodchinesevoice/</loc>
-    <lastmod>2019-03-01</lastmod>
+    <loc>https://walkedby.com/gtaivsavedgames/</loc>
+    <lastmod>2019-08-05</lastmod>
   </url>
   
   <url>
@@ -59,11 +59,6 @@
   <url>
     <loc>https://walkedby.com/steam-countries/</loc>
     <lastmod>2019-08-04</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://walkedby.com/steamid3/</loc>
-    <lastmod>2019-08-22</lastmod>
   </url>
   
   <url>
@@ -97,28 +92,8 @@
   </url>
   
   <url>
-    <loc>https://walkedby.com/tgsticks/</loc>
-    <lastmod>2018-03-11</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://walkedby.com/GMod-Stories-The-Making-of-Haven/</loc>
-    <lastmod>2018-02-03</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://walkedby.com/how-to-drag-in-vb/</loc>
-    <lastmod>2018-01-05</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://walkedby.com/steamcommunitys/</loc>
-    <lastmod>2018-08-29</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://walkedby.com/vegetarian/</loc>
-    <lastmod>2018-01-02</lastmod>
+    <loc>https://walkedby.com/steamid3/</loc>
+    <lastmod>2019-08-22</lastmod>
   </url>
   
   <url>
@@ -127,18 +102,13 @@
   </url>
   
   <url>
-    <loc>https://walkedby.com/sandbox/</loc>
-    <lastmod>2017-01-03</lastmod>
-  </url>
-  
-  <url>
     <loc>https://walkedby.com/donateme/</loc>
     <lastmod>2017-01-07</lastmod>
   </url>
   
   <url>
-    <loc>https://walkedby.com/vegasplugins/</loc>
-    <lastmod>2017-06-16</lastmod>
+    <loc>https://walkedby.com/sandbox/</loc>
+    <lastmod>2017-01-03</lastmod>
   </url>
   
   <url>
@@ -147,8 +117,38 @@
   </url>
   
   <url>
+    <loc>https://walkedby.com/vegasplugins/</loc>
+    <lastmod>2017-06-16</lastmod>
+  </url>
+  
+  <url>
     <loc>https://walkedby.com/vegasms14/</loc>
     <lastmod>2017-09-16</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://walkedby.com/vegetarian/</loc>
+    <lastmod>2018-01-02</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://walkedby.com/how-to-drag-in-vb/</loc>
+    <lastmod>2018-01-05</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://walkedby.com/GMod-Stories-The-Making-of-Haven/</loc>
+    <lastmod>2018-02-03</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://walkedby.com/steamcommunitys/</loc>
+    <lastmod>2018-08-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://walkedby.com/tgsticks/</loc>
+    <lastmod>2018-03-11</lastmod>
   </url>
   
 </urlset>
