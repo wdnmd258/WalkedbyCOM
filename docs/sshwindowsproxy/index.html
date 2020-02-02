@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155147844-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-155147844-1');
+</script>
+<!-- End Google Analytics -->
+
+  
+  <title>在 Windows 上给 Git SSH 设置代理 | 戈登走過去的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="百度搜到的很多给 git 设置代理的办法，都是给 http 设置代理，而不是给 SSH 设置代理。那个 git config --global http.proxy http://127.0.0.1:1080 设置起来，只针对 http 的 git 有效果。然后就是 ProxyCommand nc -v -x 127.0.0.1:1080 %h %p ，那个分明是给 linux 才能用的， win">
+<meta name="keywords" content="研究笔记,Git">
+<meta property="og:type" content="article">
+<meta property="og:title" content="在 Windows 上给 Git SSH 设置代理">
+<meta property="og:url" content="https://walkedby.com/sshwindowsproxy/index.html">
+<meta property="og:site_name" content="戈登走過去的博客">
+<meta property="og:description" content="百度搜到的很多给 git 设置代理的办法，都是给 http 设置代理，而不是给 SSH 设置代理。那个 git config --global http.proxy http://127.0.0.1:1080 设置起来，只针对 http 的 git 有效果。然后就是 ProxyCommand nc -v -x 127.0.0.1:1080 %h %p ，那个分明是给 linux 才能用的， win">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://walkedby.com/images/image_loading.jpg">
+<meta property="og:image" content="https://walkedby.com/images/image_loading.jpg">
+<meta property="og:image" content="https://walkedby.com/images/image_loading.jpg">
+<meta property="og:image" content="https://walkedby.com/images/image_loading.jpg">
+<meta property="og:image" content="https://walkedby.com/images/image_loading.jpg">
+<meta property="og:updated_time" content="2020-02-02T08:00:22.746Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="在 Windows 上给 Git SSH 设置代理">
+<meta name="twitter:description" content="百度搜到的很多给 git 设置代理的办法，都是给 http 设置代理，而不是给 SSH 设置代理。那个 git config --global http.proxy http://127.0.0.1:1080 设置起来，只针对 http 的 git 有效果。然后就是 ProxyCommand nc -v -x 127.0.0.1:1080 %h %p ，那个分明是给 linux 才能用的， win">
+<meta name="twitter:image" content="https://walkedby.com/images/image_loading.jpg">
+  
+    <link rel="alternate" href="../atom.xml" title="戈登走過去的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro">
+  
+  
+  <link rel="stylesheet" href="../css/style.css">
+  <script data-ad-client="ca-pub-3010816772193596" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="../index.html" id="logo">戈登走過去的博客</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="../index.html" id="subtitle">Gordon Walkedby&#39;s Blog</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="../index.html" >主页</a>
+        
+          <a class="main-nav-link" href="../archives" >文章</a>
+        
+          <a class="main-nav-link" href="../search" >搜索</a>
+        
+          <a class="main-nav-link" href="../donateme" >可乐</a>
+        
+          <a class="main-nav-link" href="../about" >关于</a>
+        
+          <a class="main-nav-link" href="../atom.xml" >RSS</a>
+        
+          <a class="main-nav-link" href="https://space.bilibili.com/4523834" >B站</a>
+        
+          <a class="main-nav-link" href="https://weibo.com/gordon2001" >微博</a>
+        
+          <a class="main-nav-link" href="https://www.youtube.com/channel/UCpnf5wTnI9br8IxJbRV5Tew" >YouTube</a>
+        
+          <a class="main-nav-link" href="https://github.com/gordonwalkedby" >GitHub</a>
+        
+          <a class="main-nav-link" href="https://steamcommunity.com/profiles/76561198099466387/" >Steam</a>
+        
+        
+      </nav>
+      
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-sshwindowsproxy" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="" class="article-date">
+  <time datetime="2019-08-31T23:44:20.000Z" itemprop="datePublished">2019-09-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      在 Windows 上给 Git SSH 设置代理
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>百度搜到的很多给 git 设置代理的办法，都是给 http 设置代理，而不是给 SSH 设置代理。那个 <code>git config --global http.proxy http://127.0.0.1:1080</code> 设置起来，只针对 http 的 git 有效果。<br>然后就是 <code>ProxyCommand nc -v -x 127.0.0.1:1080 %h %p</code> ，那个分明是给 linux 才能用的， windows 上哪里来的 nc 程序？  </p>
+<h1 id="我的操作："><a href="#我的操作：" class="headerlink" title="我的操作："></a>我的操作：</h1><ol>
+<li><p>在自己的用户文件夹找到 .ssh 文件夹，比如我的是 <code>C:\Users\wby\.ssh</code> ，在里面新建一个空白文件，取名 <code>config</code>。<br>注意不是 <code>config.txt</code> ！<br>我强烈建议把 Windows 的后缀显示给打开，不然你根本不知道自己到底在编辑什么文件。<br>都用 Git 了不至于还害怕自己把文件后缀名给改错了吧？<br><img src="/images/image_loading.jpg" data-original="https://s2.ax1x.com/2019/09/01/nSe1X9.png" alt>  </p>
+</li>
+<li><p>在 <code>config</code> 文件里写上一行就行：<br><code>ProxyCommand &quot;C:\Program Files\Git\mingw64\bin\connect.exe&quot; -S 127.0.0.1:1080 %h %p</code><br>这里 git 的安装路径和后面的代理自己看着填，不要试着用相对路径，保证要吃亏。因为 <code>Program Files</code> 文件夹中间带一个空格，所以这里需要把整个路径给引号引起来。  后面的代理的话，<code>-S</code> 指是 socks 代理，默认是 socks5，后面的 <code>%h %p</code> 意思是 Host 和 Port，必须得写上，我也不知道为什么要这么设计。  如果要使用 HTTP 代理，就写 <code>-H</code>，更多代理类型（比如 socks4）请参<a href="https://bitbucket.org/gotoh/connect/wiki/Home#!more-detail" target="_blank" rel="noopener">这个</a>。<br>以上这个写法是针对全局的，如果想只针对某个网站的话，就这么写：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Host github.com</span><br><span class="line">  ProxyCommand &quot;C:\Program Files\Git\mingw64\bin\connect.exe&quot; -S 127.0.0.1:1080 %h %p</span><br><span class="line"></span><br><span class="line">Host gitlab.com</span><br><span class="line">  ProxyCommand &quot;C:\Program Files\Git\mingw64\bin\connect.exe&quot; -S 127.0.0.1:1080 %h %p</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>接下来可以先初步尝试一下，找个地方随便 clone 个仓库试试。比如 <code>git clone git@github.com:nodejs/node.git</code>，nodejs 的官方库，clone过来有800MB+，作为速度测试还是蛮可以的。<br>这时候会出现一个问题，程序会对你询问代理的密码，如果你代理没有设置密码就直接回车即可。<br>确定没有问题了再说。如图是我的情况，速度可以达到 7 MiB/s，比不开代理的 SSH 快了几百倍。<br><img src="/images/image_loading.jpg" data-original="https://s2.ax1x.com/2019/09/01/nSnuM4.png" alt>  </p>
+</li>
+<li><p>那个代理密码输入是每次都会来询问你的，所以如果你想省事，只能靠设置环境变量来实现。<br>设置环境变量不来的看<a href="https://www.jianshu.com/p/895f4e80305a" target="_blank" rel="noopener">这个</a>好了，我也懒得说。<br>如果要设置默认密码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SOCKS5_PASSWD</span><br><span class="line">HTTP_PROXY_PASSWORD</span><br></pre></td></tr></table></figure>
+
+<p>如果要设置默认用户名：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SOCKS_USER</span><br><span class="line">HTTP_PROXY_USER</span><br></pre></td></tr></table></figure>
+
+<p>如果你的代理设置里，对用户名和密码没有要求，随便填写一个密码即可（代理会直接确认通过的），代理的默认用户名就是你的系统用户名。<br><img src="/images/image_loading.jpg" data-original="https://s2.ax1x.com/2019/09/01/nSubNt.png" alt><br>更多类型的代理用户名密码设置可以看<a href="https://bitbucket.org/gotoh/connect/wiki/Home#!specifying-user-name-via-environment-variables" target="_blank" rel="noopener">这个</a>。</p>
+</li>
+<li><p>测试一下速度，下面是我的情况：<br>clone 速度普遍在 5 MiB/s 以上：<br><img src="/images/image_loading.jpg" data-original="https://s2.ax1x.com/2019/09/01/nSMjmQ.png" alt><br>push 速度还是比较慢的，只有 120 KiB/s 左右：<br><img src="/images/image_loading.jpg" data-original="https://s2.ax1x.com/2019/09/01/nSQjgK.png" alt><br>可能是 git 文件结构的关系，都是零散的小文件，不过整体是比不开代理快的，不开代理的 push 速度简直是随缘。  </p>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../tags/Git/">Git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../tags/研究笔记/">研究笔记</a></li></ul>
+
+    </footer>
+  </div>
+  
+<nav id="article-nav">
+  
+    <a href="../remotetaskmanager/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          手机任务管理器
+        
+      </div>
+    </a>
+  
+  
+    <a href="../steamid3/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">使用第三代ID 的 STEAM 个人主页链接</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="../chinapostprices/">中国邮政 国内、港澳台、国际平邮邮费 留档</a>
+          </li>
+        
+          <li>
+            <a href="../phone/">电话流量套餐筛选排列工具</a>
+          </li>
+        
+          <li>
+            <a href="../surfacebooklatestgpudriver/">Surface Book 一代安装最新版显卡驱动的办法</a>
+          </li>
+        
+          <li>
+            <a href="../icsbatch/">描述性文本转 ICS 文件在线转换器</a>
+          </li>
+        
+          <li>
+            <a href="../dotnetframeworkingithubactions/">使用 GitHub Actions 编译 .NET Framework 程序</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="../tags/NET/">.NET</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="../tags/GTA/">GTA</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="../tags/Git/">Git</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="../tags/Linux/">Linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="../tags/Steam/">Steam</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="../tags/我的软件/">我的软件</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="../tags/日常/">日常</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="../tags/研究笔记/">研究笔记</a><span class="tag-list-count">15</span></li><li class="tag-list-item"><a class="tag-list-link" href="../tags/硬件/">硬件</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="../tags/网站功能/">网站功能</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="../tags/视频创作/">视频创作</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="../tags/起源/">起源</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="../tags/转载/">转载</a><span class="tag-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      友情链接： 
+      
+        <a class="friends-nav-link" href="https://blog.acesheep.com/" target="_blank">AceSheep</a>&nbsp;&nbsp;&nbsp;&nbsp;
+      
+        <a class="friends-nav-link" href="https://bottle.moe/" target="_blank">Bottle 小站</a>&nbsp;&nbsp;&nbsp;&nbsp;
+      
+        <a class="friends-nav-link" href="https://blog.853lab.com/" target="_blank">Sonic 853</a>&nbsp;&nbsp;&nbsp;&nbsp;
+      
+        <a class="friends-nav-link" href="https://ycwei982.com/" target="_blank">智弦正</a>&nbsp;&nbsp;&nbsp;&nbsp;
+      
+        <a class="friends-nav-link" href="https://loyisa.cn/" target="_blank">Loyisa</a>&nbsp;&nbsp;&nbsp;&nbsp;
+      <br>
+      &copy; 2020 Gordon Walkedby &nbsp;&nbsp;&nbsp;&nbsp;
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+      &nbsp;&nbsp;&nbsp;&nbsp;未经允许，禁止任何网站、媒体、个人转载我的文章。
+    </div>
+    
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="../index.html" class="mobile-nav-link">主页</a>
+  
+    <a href="../archives" class="mobile-nav-link">文章</a>
+  
+    <a href="../search" class="mobile-nav-link">搜索</a>
+  
+    <a href="../donateme" class="mobile-nav-link">可乐</a>
+  
+    <a href="../about" class="mobile-nav-link">关于</a>
+  
+    <a href="../atom.xml" class="mobile-nav-link">RSS</a>
+  
+    <a href="https://space.bilibili.com/4523834" class="mobile-nav-link">B站</a>
+  
+    <a href="https://weibo.com/gordon2001" class="mobile-nav-link">微博</a>
+  
+    <a href="https://www.youtube.com/channel/UCpnf5wTnI9br8IxJbRV5Tew" class="mobile-nav-link">YouTube</a>
+  
+    <a href="https://github.com/gordonwalkedby" class="mobile-nav-link">GitHub</a>
+  
+    <a href="https://steamcommunity.com/profiles/76561198099466387/" class="mobile-nav-link">Steam</a>
+  
+</nav>
+    
+  
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+  
+  
+  
+  <script src="../js/global.js"></script>
+  
+
+  
+  
+  </div>
+<script>!function(e){var c=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){for(var r=0;r<c.length;r++)t=c[r],0<=(n=t.getBoundingClientRect()).bottom&&0<=n.left&&n.top<=(e.innerHeight||document.documentElement.clientHeight)&&function(){var t,n,e,i,o=c[r];t=o,n=function(){c=c.filter(function(t){return o!==t})},e=new Image,i=t.getAttribute("data-original"),e.onload=function(){t.src=i,n&&n()},e.src=i}();var t,n}i(),e.addEventListener("scroll",function(){var t,n;t=i,n=e,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(n)},500)})}(this);</script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script></body>
+</html>
