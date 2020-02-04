@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://walkedby.com/"/>
-  <updated>2020-02-02T08:00:22.761Z</updated>
+  <updated>2020-02-04T01:26:43.374Z</updated>
   <id>https://walkedby.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vegas Pro 脚本编程文档在线镜像</title>
+    <link href="https://walkedby.com/vegasscriptmirror/"/>
+    <id>https://walkedby.com/vegasscriptmirror/</id>
+    <published>2020-02-04T01:22:47.000Z</published>
+    <updated>2020-02-04T01:22:47.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;源文件来自 &lt;a href=&quot;https://www.vegascreativesoftware.com/us/downloads/&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="视频创作" scheme="https://walkedby.com/tags/%E8%A7%86%E9%A2%91%E5%88%9B%E4%BD%9C/"/>
+    
+      <category term=".NET" scheme="https://walkedby.com/tags/NET/"/>
+    
+      <category term="转载" scheme="https://walkedby.com/tags/%E8%BD%AC%E8%BD%BD/"/>
+    
+  </entry>
   
   <entry>
     <title>中国邮政 国内、港澳台、国际平邮邮费 留档</title>
@@ -509,32 +537,6 @@
       <category term="研究笔记" scheme="https://walkedby.com/tags/%E7%A0%94%E7%A9%B6%E7%AC%94%E8%AE%B0/"/>
     
       <category term=".NET" scheme="https://walkedby.com/tags/NET/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Steam 社区的神奇保护机制</title>
-    <link href="https://walkedby.com/steamcommunitys/"/>
-    <id>https://walkedby.com/steamcommunitys/</id>
-    <published>2018-08-29T23:38:54.000Z</published>
-    <updated>2018-08-29T23:38:54.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;前几天我给我的steam账户换了一个邮箱：&lt;br&gt;&lt;img src=&quot;/images/image_loading.jpg&quot; data-original=&quot;https://s1.ax1x.com/2018/08/30/PXRClD.png&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="日常" scheme="https://walkedby.com/tags/%E6%97%A5%E5%B8%B8/"/>
-    
-      <category term="Steam" scheme="https://walkedby.com/tags/Steam/"/>
     
   </entry>
   
