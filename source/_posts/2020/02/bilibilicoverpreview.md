@@ -21,4 +21,4 @@ B站视频封面必须是 jpg 或 png 格式的图片，文件不大于 5MB，�
     <script src="/js/bilibilicoverpreview.js"></script>
 </div>
 
-[源代码（Google Drive）](https://drive.google.com/file/d/1hb_8P_EOgaJ5GUalFbU-Wx6mdysQ4aPH/view)  
+[源代码](https://github.com/gordonwalkedby/bilibili-Cover-Preview)  
