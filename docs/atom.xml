@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://walkedby.com/"/>
-  <updated>2020-02-04T01:26:43.374Z</updated>
+  <updated>2020-02-12T01:40:08.621Z</updated>
   <id>https://walkedby.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>B站投稿封面效果预览工具</title>
+    <link href="https://walkedby.com/bilibilicoverpreview/"/>
+    <id>https://walkedby.com/bilibilicoverpreview/</id>
+    <published>2020-02-12T01:27:54.000Z</published>
+    <updated>2020-02-12T01:27:54.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;本工具提供主要几种情况下B站投稿封面的效果预览。&lt;br&gt;B站视频封面必须是 jpg 或 png 格式的图片，文件不大于 5MB，封面比例是 16:10 ，建议尺寸是 1146x717，最低尺寸是 960x600，恕不提供裁剪的功能。&lt;/p&gt;
+&lt;div&gt;
+   
+        
+      
+    
+    </summary>
+    
+    
+      <category term="视频创作" scheme="https://walkedby.com/tags/%E8%A7%86%E9%A2%91%E5%88%9B%E4%BD%9C/"/>
+    
+      <category term="我的软件" scheme="https://walkedby.com/tags/%E6%88%91%E7%9A%84%E8%BD%AF%E4%BB%B6/"/>
+    
+  </entry>
   
   <entry>
     <title>Vegas Pro 脚本编程文档在线镜像</title>
@@ -511,32 +539,6 @@
       <category term="研究笔记" scheme="https://walkedby.com/tags/%E7%A0%94%E7%A9%B6%E7%AC%94%E8%AE%B0/"/>
     
       <category term="起源" scheme="https://walkedby.com/tags/%E8%B5%B7%E6%BA%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>.NET HttpListener 监听局域网其他设备HTTP请求的说明</title>
-    <link href="https://walkedby.com/HTTPLISTNERoverLAN/"/>
-    <id>https://walkedby.com/HTTPLISTNERoverLAN/</id>
-    <published>2018-11-10T08:30:29.000Z</published>
-    <updated>2018-11-10T08:30:29.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;我一直在想怎么在局域网内其他设备（手机、电脑）给自己的电脑传输HTTP请求，并且要用 .NET 的 &lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="研究笔记" scheme="https://walkedby.com/tags/%E7%A0%94%E7%A9%B6%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term=".NET" scheme="https://walkedby.com/tags/NET/"/>
     
   </entry>
   
