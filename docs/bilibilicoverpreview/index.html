@@ -17,18 +17,18 @@
   
   <title>B站投稿封面效果预览工具 | 戈登走過去的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="本工具提供主要几种情况下B站投稿封面的效果预览。本工具适合在电脑浏览器上使用，预览效果仅供参考，以B站实际展示为准。B站视频封面必须是 jpg 或 png 格式的图片，文件不大于 5MB，封面比例是 16:10 ，建议尺寸是 1146x717，最低尺寸是 960x600，恕不提供裁剪的功能。        选择你的封面文件：          APP首页推荐     APP订阅页面     网页动">
+  <meta name="description" content="本工具提供主要几种情况下B站投稿封面以及标题展示的效果预览。本工具适合在电脑浏览器上使用，预览效果仅供参考，以B站实际展示为准。B站视频封面必须是 jpg 或 png 格式的图片，文件不大于 5MB，封面比例是 16:10 ，建议尺寸是 1146x717，最低尺寸是 960x600，恕不提供裁剪的功能。        选择你的封面文件：          视频标题：          APP首页推">
 <meta name="keywords" content="视频创作,我的软件">
 <meta property="og:type" content="article">
 <meta property="og:title" content="B站投稿封面效果预览工具">
 <meta property="og:url" content="https://walkedby.com/bilibilicoverpreview/index.html">
 <meta property="og:site_name" content="戈登走過去的博客">
-<meta property="og:description" content="本工具提供主要几种情况下B站投稿封面的效果预览。本工具适合在电脑浏览器上使用，预览效果仅供参考，以B站实际展示为准。B站视频封面必须是 jpg 或 png 格式的图片，文件不大于 5MB，封面比例是 16:10 ，建议尺寸是 1146x717，最低尺寸是 960x600，恕不提供裁剪的功能。        选择你的封面文件：          APP首页推荐     APP订阅页面     网页动">
+<meta property="og:description" content="本工具提供主要几种情况下B站投稿封面以及标题展示的效果预览。本工具适合在电脑浏览器上使用，预览效果仅供参考，以B站实际展示为准。B站视频封面必须是 jpg 或 png 格式的图片，文件不大于 5MB，封面比例是 16:10 ，建议尺寸是 1146x717，最低尺寸是 960x600，恕不提供裁剪的功能。        选择你的封面文件：          视频标题：          APP首页推">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-02-12T07:08:40.485Z">
+<meta property="og:updated_time" content="2020-02-12T12:09:57.446Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="B站投稿封面效果预览工具">
-<meta name="twitter:description" content="本工具提供主要几种情况下B站投稿封面的效果预览。本工具适合在电脑浏览器上使用，预览效果仅供参考，以B站实际展示为准。B站视频封面必须是 jpg 或 png 格式的图片，文件不大于 5MB，封面比例是 16:10 ，建议尺寸是 1146x717，最低尺寸是 960x600，恕不提供裁剪的功能。        选择你的封面文件：          APP首页推荐     APP订阅页面     网页动">
+<meta name="twitter:description" content="本工具提供主要几种情况下B站投稿封面以及标题展示的效果预览。本工具适合在电脑浏览器上使用，预览效果仅供参考，以B站实际展示为准。B站视频封面必须是 jpg 或 png 格式的图片，文件不大于 5MB，封面比例是 16:10 ，建议尺寸是 1146x717，最低尺寸是 960x600，恕不提供裁剪的功能。        选择你的封面文件：          视频标题：          APP首页推">
   
     <link rel="alternate" href="../atom.xml" title="戈登走過去的博客" type="application/atom+xml">
   
@@ -114,14 +114,16 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>本工具提供主要几种情况下B站投稿封面的效果预览。<br>本工具适合在电脑浏览器上使用，预览效果仅供参考，以B站实际展示为准。<br>B站视频封面必须是 jpg 或 png 格式的图片，文件不大于 5MB，封面比例是 16:10 ，建议尺寸是 1146x717，最低尺寸是 960x600，恕不提供裁剪的功能。  </p>
+        <p>本工具提供主要几种情况下B站投稿封面以及标题展示的效果预览。<br>本工具适合在电脑浏览器上使用，预览效果仅供参考，以B站实际展示为准。<br>B站视频封面必须是 jpg 或 png 格式的图片，文件不大于 5MB，封面比例是 16:10 ，建议尺寸是 1146x717，最低尺寸是 960x600，恕不提供裁剪的功能。  </p>
 <div>
     选择你的封面文件：<input type="file" accept="image/jpeg, image/jpg, image/png" id="uploadimg">
     <br>
+    视频标题：<input type="text" maxlength="250" id="videotitle" value="你的视频 就在这里" style="width: 400px;">
+    <br>
     <input type="radio" name="bgtype" value="app" checked="checked">APP首页推荐
     <input type="radio" name="bgtype" value="appsub">APP订阅页面
-    <input type="radio" name="bgtype" value="websub">网页动态
     <br>
+    <input type="radio" name="bgtype" value="websub">网页动态
     <input type="radio" name="bgtype" value="websub2">网页动态2
     <input type="radio" name="bgtype" value="webspace">网页个人空间
     <br><br>
