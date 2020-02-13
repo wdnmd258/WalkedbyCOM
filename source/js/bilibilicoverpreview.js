@@ -1,6 +1,4 @@
 "use strict";
-var uploadCover = new Image();
-uploadCover.onload = RefreshPreview;
 var appbg = new Image();
 appbg.src = "/images/bilibili_cover_preview_images/app.png";
 var appsubbg = new Image();
@@ -11,6 +9,9 @@ var websub2bg = new Image();
 websub2bg.src = "/images/bilibili_cover_preview_images/websub2.png";
 var webspacebg = new Image();
 webspacebg.src = "/images/bilibili_cover_preview_images/webspace.png";
+var uploadCover = new Image();
+uploadCover.onload = RefreshPreview;
+uploadCover.src = "/images/bilibili_cover_preview_images/cover.jpg";
 (function () {
     var h = document.getElementById("uploadimg");
     if (h == null) {
